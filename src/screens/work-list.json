@@ -1,0 +1,45 @@
+[
+  {
+    "type": "props design for SF movie",
+    "title": "wonderland",
+    "imgSrc": "p03_thumb",
+    "link": "/project/wonderland",
+    "year": 2019
+  },
+  {
+    "type": "future UX scenario",
+    "title": "campfire",
+    "imgSrc": "p02_thumb",
+    "link": "/project/campfire",
+    "year": 2018
+  },
+  {
+    "type": "industrial design",
+    "title": "idly",
+    "imgSrc": "p01_thumb",
+    "link": "/project/idly",
+    "year": 2017
+  },
+
+  {
+    "type": "industrial design / experience design",
+    "title": "paragraph",
+    "imgSrc": "p08_thumb",
+    "link": "/project/paragraph",
+    "year": 2017
+  },
+  {
+    "type": "art direction / exhibition branding",
+    "title": "superhappy",
+    "imgSrc": "p05_thumb",
+    "link": "/project/superhappy",
+    "year": 2017
+  },
+  {
+    "type": "city experience design proposal",
+    "title": "nofie",
+    "imgSrc": "p06_thumb",
+    "link": "/project/nofie",
+    "year": 2017
+  }
+]

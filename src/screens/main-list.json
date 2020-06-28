@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Tangible",
+    "title": "Idly",
+    "imgSrc": "p01_thumb",
+    "link": "/project/idly"
+  },
+  {
+    "type": "Future UX strategy",
+    "title": "Campfire",
+    "imgSrc": "p02_thumb",
+    "link": "/project/01"
+  },
+  {
+    "type": "Tangible + UX",
+    "title": "Porta",
+    "imgSrc": "p04_thumb",
+    "link": "/project/01"
+  },
+  {
+    "type": "Tangible + UX",
+    "title": "Paragraph",
+    "imgSrc": "p05_thumb",
+    "link": "/project/01"
+  },
+  {
+    "type": "Art direction + Exhibition branding",
+    "title": "superhappy",
+    "imgSrc": "p03_thumb",
+    "link": "/project/01"
+  },
+  {
+    "type": "Tangible",
+    "title": "Nofie",
+    "imgSrc": "p01_thumb",
+    "link": "/project/01"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "type": "Framer X study",
+    "title": "odd interactions",
+    "imgSrc": "e01_thumb",
+    "link": "/expmnt/odd",
+    "year": 2020
+  },
+  {
+    "type": "Facebook Online Hackathon / Spark AR",
+    "title": "faceband",
+    "imgSrc": "e02_thumb",
+    "link": "/expmnt/faceband",
+    "year": 2019
+  },
+  {
+    "type": "code + space prototyping",
+    "title": "palm to room",
+    "imgSrc": "e03_thumb",
+    "link": "/expmnt/ptor",
+    "year": 2019
+  },
+  {
+    "type": "code + process",
+    "title": "website v3",
+    "imgSrc": "e03_thumb",
+    "link": "/expmnt/website",
+    "year": 2019
+  },
+  {
+    "type": "concept visualization",
+    "title": "unified interface",
+    "imgSrc": "e05_thumb",
+    "link": "/expmnt/unified",
+    "year": 2018
+  },
+  {
+    "type": "3d printing + Open source",
+    "title": "takeout garden",
+    "imgSrc": "expmnt-img04",
+    "link": "/expmnt/01",
+    "year": 2016
+  },
+
+  {
+    "type": "Tangible + Toy",
+    "title": "allergy alerty",
+    "imgSrc": "expmnt-img01",
+    "link": "/expmnt/01",
+    "year": 2014
+  }
+]
