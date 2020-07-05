@@ -39,8 +39,16 @@ const PSlideshow = props => {
               <div className="each-fade" key={item.imgSrc}>
                 <div className="image-container">
                   <LazyLoad height={200} offset={200} once>
-                    <img
+                    {/* <img
                       src={require(`../img/${item.imgSrc}.jpg`)}
+                      alt={item.imgSrc}
+                    /> */}
+                    <img
+                      src={
+                        'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+                        item.imgSrc +
+                        '.jpg'
+                      }
                       alt={item.imgSrc}
                     />
                   </LazyLoad>

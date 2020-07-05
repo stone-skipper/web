@@ -13,7 +13,15 @@ const PImgLayout01 = props => {
   const { imgSrc } = props
   return (
     <StyledPImgLayout01>
-      <img src={require(`../img/${imgSrc}.jpg`)} alt={imgSrc} />
+      {/* <img src={require(`../img/${imgSrc}.jpg`)} alt={imgSrc} /> */}
+      <img
+        src={
+          'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+          imgSrc +
+          '.jpg'
+        }
+        alt={imgSrc}
+      />
     </StyledPImgLayout01>
   )
 }

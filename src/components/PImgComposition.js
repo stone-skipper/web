@@ -15,11 +15,35 @@ const PImgComposition = props => {
   return (
     <StyledPImgComposition>
       <div className="leftWrapper">
-        <img src={require(`../img/${img1}.jpg`)} alt={img1} />
+        {/* <img src={require(`../img/${img1}.jpg`)} alt={img1} /> */}
+        <img
+          src={
+            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            img1 +
+            '.jpg'
+          }
+          alt={img1}
+        />
       </div>
       <div className="rightWrapper">
-        <img src={require(`../img/${img2}.jpg`)} alt={img2} />
-        <img src={require(`../img/${img3}.jpg`)} alt={img3} />
+        <img
+          src={
+            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            img2 +
+            '.jpg'
+          }
+          alt={img2}
+        />
+        <img
+          src={
+            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            img3 +
+            '.jpg'
+          }
+          alt={img3}
+        />
+        {/* <img src={require(`../img/${img2}.jpg`)} alt={img2} /> */}
+        {/* <img src={require(`../img/${img3}.jpg`)} alt={img3} /> */}
       </div>
     </StyledPImgComposition>
   )

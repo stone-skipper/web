@@ -16,7 +16,15 @@ const PGif = props => {
     <StyledPGIf full={full}>
       <div className="imgWrapper">
         <div className="itemWrapper">
-          <img src={require(`../img/${imgSrc}.gif`)} alt={desc} />
+          {/* <img src={require(`../img/${imgSrc}.gif`)} alt={desc} /> */}
+          <img
+            src={
+              'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+              imgSrc +
+              '.gif'
+            }
+            alt={imgSrc}
+          />
         </div>
       </div>
       <div className="textWrapper">
