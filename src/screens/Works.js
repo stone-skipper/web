@@ -20,6 +20,12 @@ const Works = () => {
     <div>
       <Logo hide={0} />
       <StyledWorks>
+        <div className="hovertag">
+          <a id="highlight">highlight</a>
+          <a id="id">industrial</a>
+          <a id="ux">user experience</a>
+          <a id="artdirection">art direction</a>
+        </div>
         <StyledProjects>
           <h3>projects /</h3>
           <div className="projectTitle">
@@ -69,7 +75,7 @@ const Works = () => {
 const StyledWorks = styled.div`
   width: 97vw;
   height: 100vh;
-  padding-top: 28vh;
+  padding-top: 30vh;
   margin-left: 3vw;
   overflow-x: scroll;
   display: grid;
@@ -77,6 +83,21 @@ const StyledWorks = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 4.5vw;
 
+  .hovertag {
+    position: absolute;
+    top: 23vh;
+    font-size: 0.8em;
+    display: grid;
+    width: 40vw;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    grid-gap: 4vw;
+    display: none;
+    a {
+      background-color: red;
+      text-align: center;
+    }
+  }
   @media (max-width: 1024px) {
     display: block;
     overflow-x: hidden;

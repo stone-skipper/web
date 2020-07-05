@@ -119,7 +119,12 @@ const Profile = () => {
           </ScrollContent>
         </ScrollCover>
       </DivExp>
-      <a href="/" className="resume" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://drive.google.com/file/d/1phcIxgWsLs468T5RyZyB_nfxGH9s6Qm_/view?usp=sharing"
+        className="resume"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Resume / CV
       </a>
     </StyledProfile>

@@ -221,7 +221,7 @@ const p02Campfire = () => {
           </p>
         }
       />
-      <LazyLoad height="110vh" offset={100} once>
+      <LazyLoad height="120vh" offset={100} once>
         <PResearch
           imgs_odd={research_odd}
           imgs_even={research_even}
@@ -229,7 +229,7 @@ const p02Campfire = () => {
           desc="I visited 31 workplaces from typical corporation offices to someone's apartments, exploring what is driving changes in the way we work"
         />
       </LazyLoad>
-      <LazyLoad height="120vh" offset={100} once>
+      <LazyLoad height="130vh" offset={100} once>
         <PInsightLR
           imgs={insightImgs}
           title="How are we changing"
@@ -273,7 +273,7 @@ and their conversations turns into information by the environment"
         />
       </LazyLoad>
       <PVideo videoSrc="https://youtu.be/HibwELn2Uy8?list=PL2l5e0Djn3__gf717mGVRm4QUgo9mCfM0" />
-      <LazyLoad height="260vh" offset={100} once>
+      <LazyLoad height="280vh" offset={100} once>
         <PDetail
           sectTitle={
             <span>
@@ -289,7 +289,7 @@ and connect with people around you for an instant cooperation"
           bgColor="rgba(255,255,255,0.1)"
         />
       </LazyLoad>
-      <LazyLoad height="270vh" offset={100} once>
+      <LazyLoad height="290vh" offset={100} once>
         <PDetail
           sectTitle={
             <span>
@@ -306,7 +306,7 @@ and provide a right assistance, both for on-site and remote collaborators"
           bgColor="rgba(255,255,255,0.1)"
         />
       </LazyLoad>
-      <LazyLoad height="200vh" offset={100} once>
+      <LazyLoad height="220vh" offset={100} once>
         <PDetail
           sectTitle={
             <span>

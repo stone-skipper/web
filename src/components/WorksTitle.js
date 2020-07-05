@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 // 2. Components
 // 3. for style
 import styled from 'styled-components'
+import Image from 'lqip-react'
+
 // import Img01 from '../img/p01_thumb.jpg'
 
 // 4. Static Resources
@@ -12,15 +14,15 @@ import styled from 'styled-components'
 
 const WorksTitle = props => {
   const { type, title, imgSrc, link, year, currentMenu, setCurrentMenu } = props
-  // const [currentMenu, setCurrentMenu] = React.useState(null)
+  var thumbnail = imgSrc + 'small'
   const handleHover = event => {
-    // console.log(
-    //   'event target: ',
-    //   event.target,
-    //   ' / ',
-    //   'event target id: ',
-    //   event.target.id
-    // )
+    console.log(
+      'event target: ',
+      event.target,
+      ' / ',
+      'event target id: ',
+      event.target.id
+    )
     console.log(event.target.id)
     setCurrentMenu(event.target.id)
     // console.log(currentMenu)
@@ -40,7 +42,13 @@ const WorksTitle = props => {
     <StyledWorksTitle>
       <TitleItem id={title}>
         <ImgBack className="imgWrapper">
-          <img src={require(`../img/${imgSrc}.jpg`)} alt={title} />
+          <Image
+            src={require(`../img/${imgSrc}.jpg`)}
+            thumbnail={require(`../img/${thumbnail}.jpg`)}
+            aspectRatio="10x10" // could be '1024x768'
+            blur={10}
+          />
+          {/* <img src={require(`../img/${imgSrc}.jpg`)} alt={title} /> */}
         </ImgBack>
         <div
           className={`itemWrapper ${(currentMenu === title ||
@@ -50,7 +58,7 @@ const WorksTitle = props => {
           onMouseOverCapture={handleHover}
           onMouseOut={handleMouseOut}
         >
-          <Link to={link} id={title}>
+          <Link to={link} id={title} className={title}>
             <h1>{title}</h1>
             <div className="titleInfo">
               <h2>{type}</h2>
@@ -125,7 +133,27 @@ const TitleItem = styled.div`
       opacity: 1;
     }
   }
+  .campfire h1 {
+    /* border-bottom: 2px solid white; */
+  }
 
+  .odd h1 {
+    /* border-bottom: 2px solid white; */
+    /* background: url('https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg');
+    background-repeat: repeat;
+    background-ppposition-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-repeat: repeat-x;
+    background-size: 15px 5px;
+    background-position: 2px 40px;
+    animation: move 15s linear infinite;
+    -webkit-animation: move 15s linear infinite;
+    animation-play-state: paused;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects; */
+  }
   link {
     pointer-events: none;
   }

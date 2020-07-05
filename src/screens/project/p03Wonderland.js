@@ -74,10 +74,6 @@ const p03Wonderland = () => {
     {
       imgSrc: 'p03_pr12',
       desc: 'silk printing'
-    },
-    {
-      imgSrc: 'p03_pr13',
-      desc: 'on the shot'
     }
   ]
   var imgLayout01 = [
@@ -195,6 +191,15 @@ const p03Wonderland = () => {
           trdr={300}
         />
       </LazyLoad>
+      <LazyLoad height="120vh" offset={100} once>
+        <PConcept
+          imgSrc="p03_img01"
+          concept={<h1>Devices, the 7th character of the film</h1>}
+          user="personas of the narrative"
+          desc="Mobile devices in the story are the medium of communication between people and AIs. Though the film envisions the near future, those similar devices but with different tone and manner set the era aside from the current world where the viewers live. "
+          txtColor="white"
+        />
+      </LazyLoad>
       <LazyLoad height="110vh" offset={100} once>
         <PImgTxt01
           imgs={imgLayout03}
@@ -232,7 +237,7 @@ const p03Wonderland = () => {
       <LazyLoad height="110vh" offset={100} once>
         <PImgComposition img1="p03_img34" img2="p03_img32" img3="p03_img35" />
       </LazyLoad>
-      <LazyLoad height="120vh" offset={100} once>
+      <LazyLoad height="135vh" offset={100} once>
         <PImgLayout01 imgSrc="p03_img11" />
       </LazyLoad>
       <LazyLoad height="110vh" offset={100} once>

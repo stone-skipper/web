@@ -23,10 +23,11 @@
   {
     "type": "code + process",
     "title": "website v3",
-    "imgSrc": "e03_thumb",
+    "imgSrc": "expmnt-img06",
     "link": "/expmnt/website",
     "year": 2019
   },
+
   {
     "type": "concept visualization",
     "title": "unified interface",
@@ -38,15 +39,7 @@
     "type": "3d printing + Open source",
     "title": "takeout garden",
     "imgSrc": "expmnt-img04",
-    "link": "/expmnt/01",
+    "link": "/works",
     "year": 2016
-  },
-
-  {
-    "type": "Tangible + Toy",
-    "title": "allergy alerty",
-    "imgSrc": "expmnt-img01",
-    "link": "/expmnt/01",
-    "year": 2014
   }
 ]

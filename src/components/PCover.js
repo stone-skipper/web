@@ -17,6 +17,14 @@ const PCover = props => {
     <StyledPCover imgSrc={imgSrc} imgNum={imgNum} bkwrapper={bkwrapper}>
       <div className="imgWrapper">
         <img src={require(`../img/${imgSrc}.jpg`)} alt={title} />
+        {/* <img
+          src={
+            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            imgSrc +
+            '.jpg'
+          }
+          alt={title}
+        /> */}
       </div>
       <div className="blackWrapper" />
       <div className="titleWrapper">

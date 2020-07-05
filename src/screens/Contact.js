@@ -17,9 +17,11 @@ const Contact = () => {
       <StyledContact>
         <Intro>
           I’m currently in <span>Seoul, Korea,</span> <br />
-          open for <span>internship / part-time job</span>
+          participating in
+          <span> future vision project for MR device</span>.
           <br />
-          related to <span>IT / UX projects for products and spaces</span>
+          I'd love to talk about any
+          <span> IT / UX projects for products and spaces</span>
         </Intro>
         <ContactHere>
           <img src={require(`../img/email.svg`)} alt="email" />

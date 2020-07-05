@@ -4,21 +4,24 @@
     "title": "wonderland",
     "imgSrc": "p03_thumb",
     "link": "/project/wonderland",
-    "year": 2019
+    "year": 2019,
+    "category": ["highlight", "id", "artdirection"]
   },
   {
     "type": "future UX scenario",
     "title": "campfire",
     "imgSrc": "p02_thumb",
     "link": "/project/campfire",
-    "year": 2018
+    "year": 2018,
+    "category": ["future", "ux"]
   },
   {
     "type": "industrial design",
     "title": "idly",
     "imgSrc": "p01_thumb",
     "link": "/project/idly",
-    "year": 2017
+    "year": 2017,
+    "category": ["id"]
   },
 
   {
@@ -26,20 +29,23 @@
     "title": "paragraph",
     "imgSrc": "p08_thumb",
     "link": "/project/paragraph",
-    "year": 2017
+    "year": 2017,
+    "category": ["id", "ux"]
   },
   {
     "type": "art direction / exhibition branding",
     "title": "superhappy",
     "imgSrc": "p05_thumb",
     "link": "/project/superhappy",
-    "year": 2017
+    "year": 2017,
+    "category": ["artdirection", "branding"]
   },
   {
     "type": "city experience design proposal",
     "title": "nofie",
     "imgSrc": "p06_thumb",
     "link": "/project/nofie",
-    "year": 2017
+    "year": 2017,
+    "category": ["service"]
   }
 ]
