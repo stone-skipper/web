@@ -18,7 +18,7 @@ const PImgComposition = props => {
         {/* <img src={require(`../img/${img1}.jpg`)} alt={img1} /> */}
         <img
           src={
-            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
             img1 +
             '.jpg'
           }
@@ -28,7 +28,7 @@ const PImgComposition = props => {
       <div className="rightWrapper">
         <img
           src={
-            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
             img2 +
             '.jpg'
           }
@@ -36,7 +36,7 @@ const PImgComposition = props => {
         />
         <img
           src={
-            'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+            'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
             img3 +
             '.jpg'
           }

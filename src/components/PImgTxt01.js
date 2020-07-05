@@ -23,7 +23,7 @@ const PImgTxt01 = props => {
               {/* <img src={require(`../img/${item.imgSrc}.jpg`)} alt={item.desc} /> */}
               <img
                 src={
-                  'https://sml-test-0705.s3.ap-northeast-2.amazonaws.com/' +
+                  'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
                   item.imgSrc +
                   '.jpg'
                 }
