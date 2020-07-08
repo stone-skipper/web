@@ -52,7 +52,7 @@ const PhotoItem = props => {
           /> */}
           <img
             src={
-              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/photolog/' +
               data +
               '.jpg'
             }
@@ -98,7 +98,7 @@ const PhotoItem = props => {
           {/* <img src={require(`../img/photolog/${Pdata}.jpg`)} alt="by sml" /> */}
           <img
             src={
-              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/photolog/' +
               Pdata +
               '.jpg'
             }
