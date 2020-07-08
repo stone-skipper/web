@@ -15,7 +15,15 @@ const PImgTxt02Wide = props => {
     <StyledPImgTxt02Wide txtColor={txtColor}>
       <div className="imgWrapper">
         <div className="itemWrapper">
-          <img src={require(`../img/${imgSrc}.jpg`)} alt={title} />
+          {/* <img src={require(`../img/${imgSrc}.jpg`)} alt={title} /> */}
+          <img
+            src={
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              imgSrc +
+              '.jpg'
+            }
+            alt={title}
+          />
         </div>
       </div>
       <div className="textWrapper">

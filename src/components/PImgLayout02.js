@@ -13,8 +13,24 @@ const PImgLayout02 = props => {
   const { imgSrc1, imgSrc2 } = props
   return (
     <StyledPImgLayout02>
-      <img src={require(`../img/${imgSrc1}.jpg`)} alt={imgSrc1} />
-      <img src={require(`../img/${imgSrc2}.jpg`)} alt={imgSrc2} />
+      {/* <img src={require(`../img/${imgSrc1}.jpg`)} alt={imgSrc1} />
+      <img src={require(`../img/${imgSrc2}.jpg`)} alt={imgSrc2} /> */}
+      <img
+        src={
+          'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+          imgSrc1 +
+          '.jpg'
+        }
+        alt={imgSrc1}
+      />
+      <img
+        src={
+          'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+          imgSrc2 +
+          '.jpg'
+        }
+        alt={imgSrc2}
+      />
     </StyledPImgLayout02>
   )
 }

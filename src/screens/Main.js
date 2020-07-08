@@ -153,7 +153,15 @@ const Main = () => {
               return (
                 <div className="each-fade" key={item}>
                   <div className="image-container">
-                    <img src={require(`../img/${item}.jpg`)} alt={item} />
+                    {/* <img src={require(`../img/${item}.jpg`)} alt={item} /> */}
+                    <img
+                      src={
+                        'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+                        item +
+                        '.jpg'
+                      }
+                      alt={item}
+                    />
                   </div>
                 </div>
               )

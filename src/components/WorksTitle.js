@@ -42,13 +42,21 @@ const WorksTitle = props => {
     <StyledWorksTitle>
       <TitleItem id={title}>
         <ImgBack className="imgWrapper">
-          <Image
+          {/* <Image
             src={require(`../img/${imgSrc}.jpg`)}
             thumbnail={require(`../img/${thumbnail}.jpg`)}
             aspectRatio="10x10" // could be '1024x768'
             blur={10}
-          />
+          /> */}
           {/* <img src={require(`../img/${imgSrc}.jpg`)} alt={title} /> */}
+          <img
+            src={
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              imgSrc +
+              '.jpg'
+            }
+            alt={title}
+          />
         </ImgBack>
         <div
           className={`itemWrapper ${(currentMenu === title ||

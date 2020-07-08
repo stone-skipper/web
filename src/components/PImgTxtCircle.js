@@ -25,9 +25,17 @@ const PImgTxtCircle = props => {
           return (
             <div className="item">
               <div className="imgWrapper">
-                <img
+                {/* <img
                   src={require(`../img/${item.imgSrc}.jpg`)}
                   alt={item.desc}
+                /> */}
+                <img
+                  src={
+                    'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+                    item.imgSrc +
+                    '.jpg'
+                  }
+                  alt={item.imgSrc}
                 />
                 <p>{item.desc}</p>
               </div>

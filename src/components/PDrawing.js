@@ -18,7 +18,15 @@ const PDrawing = props => {
         <p>{desc}</p>
       </div>
       <div className="imgWrapper">
-        <img src={require(`../img/${imgSrc}.png`)} alt={imgSrc} />
+        {/* <img src={require(`../img/${imgSrc}.png`)} alt={imgSrc} /> */}
+        <img
+          src={
+            'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+            imgSrc +
+            '.png'
+          }
+          alt={imgSrc}
+        />
       </div>
     </StyledPDrawing>
   )

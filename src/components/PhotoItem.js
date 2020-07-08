@@ -45,8 +45,17 @@ const PhotoItem = props => {
         }}
       >
         <LazyLoad height={200} offset={200} once>
-          <img
+          {/* <img
             src={require(`../img/photolog/${data}.jpg`)}
+            alt={title}
+            className="thumb"
+          /> */}
+          <img
+            src={
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              data +
+              '.jpg'
+            }
             alt={title}
             className="thumb"
           />
@@ -86,8 +95,15 @@ const PhotoItem = props => {
           <Close className="closeButton" />
         </div>
         <div className="contentWrapper">
-          <img src={require(`../img/photolog/${Pdata}.jpg`)} alt="by sml" />
-
+          {/* <img src={require(`../img/photolog/${Pdata}.jpg`)} alt="by sml" /> */}
+          <img
+            src={
+              'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+              Pdata +
+              '.jpg'
+            }
+            alt={Pdata}
+          />
           <div className="text">
             <span className="title">{Ptitle}</span>
             &nbsp;
