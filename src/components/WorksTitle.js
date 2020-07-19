@@ -13,34 +13,57 @@ import Image from 'lqip-react'
 //——*——*——*——*——*——//
 
 const WorksTitle = props => {
-  const { type, title, imgSrc, link, year, currentMenu, setCurrentMenu } = props
+  const {
+    type,
+    title,
+    imgSrc,
+    link,
+    year,
+    currentMenu,
+    setCurrentMenu,
+    category,
+    hoverCategory,
+    setHoverCategory
+  } = props
   var thumbnail = imgSrc + 'small'
   const handleHover = event => {
-    console.log(
-      'event target: ',
-      event.target,
-      ' / ',
-      'event target id: ',
-      event.target.id
-    )
+    // console.log(
+    //   'event target: ',
+    //   event.target,
+    //   ' / ',
+    //   'event target id: ',
+    //   event.target.id
+    // )
     console.log(event.target.id)
     setCurrentMenu(event.target.id)
     // console.log(currentMenu)
   }
-
-  // useEffect(() => {
-  //   setCurrentMenu(currentMenu)
-  //   console.log(currentMenu)
-  // }, [currentMenu])
 
   const handleMouseOut = event => {
     console.log('mouse out from:', event.target.id)
     setCurrentMenu(null)
   }
 
+  var featuredColor = '#EE5F4E'
+  var interColor = '#2FC4DB'
+  var visColor = '#BEB826'
+  var idColor = '#2678BE'
+
+  React.useEffect(() => {
+    console.log(hoverCategory)
+  }, [hoverCategory])
+
   return (
     <StyledWorksTitle>
-      <TitleItem id={title}>
+      <TitleItem
+        id={title.slice(0, 3)}
+        featuredColor={featuredColor}
+        interColor={interColor}
+        idColor={idColor}
+        visColor={visColor}
+        hoverCategory={hoverCategory}
+        currentMenu={currentMenu}
+      >
         <ImgBack className="imgWrapper">
           {/* <Image
             src={require(`../img/${imgSrc}.jpg`)}
@@ -59,14 +82,15 @@ const WorksTitle = props => {
           />
         </ImgBack>
         <div
-          className={`itemWrapper ${(currentMenu === title ||
+          className={`itemWrapper ${(currentMenu === title.slice(0, 3) ||
             currentMenu === null) &&
-            'activated'}`}
-          id={title}
+            'activated'} ${category.includes(hoverCategory) === true &&
+            hoverCategory}`}
+          id={title.slice(0, 3)}
           onMouseOverCapture={handleHover}
           onMouseOut={handleMouseOut}
         >
-          <Link to={link} id={title} className={title}>
+          <Link to={link} id={title.slice(0, 3)} className={title.slice(0, 3)}>
             <h1>{title}</h1>
             <div className="titleInfo">
               <h2>{type}</h2>
@@ -122,7 +146,6 @@ const TitleItem = styled.div`
   position: relative;
   @media (max-width: 1024px) {
     width: 94vw;
-    /* background-color: red; */
     margin-bottom: 3px;
   }
   .imgWrapper {
@@ -137,8 +160,47 @@ const TitleItem = styled.div`
     opacity: 0.1;
     transition: 0.2s;
     background-color: rgba(0, 0, 0, 0);
+
     &.activated {
       opacity: 1;
+    }
+
+    &.featured {
+      opacity: ${props =>
+        props.hoverCategory === 'featured' ||
+        props.currentMenu === null ||
+        props.currentMenu === props.id
+          ? 1
+          : 0.1};
+
+      color: ${props => props.featuredColor};
+    }
+    &.interactives {
+      opacity: ${props =>
+        props.hoverCategory === 'interactives' ||
+        props.currentMenu === null ||
+        props.currentMenu === props.id
+          ? 1
+          : 0.1};
+      color: ${props => props.interColor};
+    }
+    &.id {
+      opacity: ${props =>
+        props.hoverCategory === 'id' ||
+        props.currentMenu === null ||
+        props.currentMenu === props.id
+          ? 1
+          : 0.1};
+      color: ${props => props.idColor};
+    }
+    &.visual {
+      opacity: ${props =>
+        props.hoverCategory === 'visual' ||
+        props.currentMenu === null ||
+        props.currentMenu === props.id
+          ? 1
+          : 0.1};
+      color: ${props => props.visColor};
     }
   }
   .campfire h1 {

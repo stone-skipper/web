@@ -90,7 +90,7 @@ const p05Superhappy = () => {
           </p>
         }
       />
-      <LazyLoad height="100vh" offset={100} once>
+      <LazyLoad height="110vh" offset={100} once>
         <PSlideshow
           imgs={slideimgs1}
           title="extract images from the feeling"
@@ -100,12 +100,7 @@ const p05Superhappy = () => {
       <LazyLoad height="120vh" offset={100} once>
         <PConcept
           imgSrc="p05_img27"
-          concept={
-            <h1>
-              On the border between hope and discourage, <br />
-              <span>well, we're superhappy.</span>
-            </h1>
-          }
+          concept={<h1>exhibition branding / art directing</h1>}
           user="HID 2017 graduation exhibition"
           desc="The title 'super happy' in this exhibition symbolizes the crooked feeling of happiness, rather than its typical meaning-overwhelming emotions of happiness."
           txtColor="white"

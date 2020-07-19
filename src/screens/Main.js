@@ -26,7 +26,18 @@ const Main = () => {
     duration: 2000,
     transitionDuration: 500,
     infinite: true,
-    indicators: true,
+    indicators: false,
+    autoplay: true,
+    arrows: false,
+    onChange: (oldIndex, newIndex) => {
+      // console.log(`fade transition from ${oldIndex} to ${newIndex}`)
+    }
+  }
+  const fadeProperties2 = {
+    duration: 4000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: false,
     autoplay: true,
     arrows: false,
     onChange: (oldIndex, newIndex) => {
@@ -36,18 +47,23 @@ const Main = () => {
   var imgs = [
     'p01_thumb',
     'p02_img13',
-    'p03_img06',
+    'p03_img05',
+    // 'p04_img10',
     'e03_img02',
-    'p02_img11',
-    'p01_concept',
-    'p03_img51',
-    'p03_img08',
-    'p03_img17',
-    'p03_img20',
-    'p03_img43',
+    'e01_thumb2',
     'p05_img01',
-    'p05_img05',
-    'p04_img10'
+    'p02_img18',
+    'p03_img01',
+    'p03_pr01',
+
+    'p04_pr04',
+    'p03_img08',
+    'p06_pr18',
+    'p03_img17',
+    // 'p03_img20',
+    // 'p03_img43',
+    'p05_img05'
+    // 'p03_img51'
   ]
   function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
@@ -78,53 +94,52 @@ const Main = () => {
         cx={cx}
         cy={cy}
       >
-        {/* <HoverDiv>
-          {MAINLIST.map(item => {
-            const { title, link, imgSrc } = item
-            return (
-              <CircleDiv
-                className="circles"
-                key={title}
-                link={link}
-                imgSrc={imgSrc}
-              />
-            )
-          })}{' '}
-        </HoverDiv>
-        <IntroText>
-          I'm an experience designer from an industrial design background,
-          interested in converging different mediums in new technologies. I'm an
-          experimenter by myself, implementing 3d prototyping and digital
-          prototypes to test and deliver my ideas. I pursue my career in
-          experiences of tangible products and spaces.
-        </IntroText> */}
-        {/* <CircleSlide imgs={mainimgs1} left="50vw" />
-        <CircleSlide imgs={mainimgs2} left="-28vw" /> */}
-        {/* 
-        <div className="title">
+        <div className="circle">
+          <div className="slide-container2">
+            <Fade {...fadeProperties2}>
+              {imgs.map(item => {
+                return (
+                  <div className="each-fade" key={item}>
+                    <div className="image-container">
+                      {/* <img src={require(`../img/${item}.jpg`)} alt={item} /> */}
+                      <img
+                        src={
+                          'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
+                          item +
+                          '.jpg'
+                        }
+                        alt={item}
+                      />
+                    </div>
+                  </div>
+                )
+              })}
+            </Fade>
+          </div>
+        </div>
+        <div className="typo">
           <p>
             <span className="bold">seungmee lee</span> is
-            <span className="italic">
-              {' '}
-              an experience designer & forward-thinker
-            </span>
-            , <br />
-            interested in{' '}
-            <span className="underline">
-              future tech / UX for space and products
-            </span>
+            <span className="italic"> an experience designer,</span>
+            <br />
+            visualizing and creating new experiences beyond screens.
+            <br />
+            has a passion in interactions and ux for emerging technologies.
+            <br />
+            <br />
+            this is an archive of projects and experiments <br />
+            by observing, crafting, coding, drawing, and designing.
           </p>
-        </div> */}
-
+        </div>
         <div
           className="card"
-          onMouseEnter={() => {
-            var random = randomNumber(0, imgs.length)
-            setBg(imgs[random])
-          }}
-          onMouseLeave={() => {
-            setBg('white')
-          }}
+          // onMouseEnter={() => {
+          //   var random = randomNumber(0, imgs.length)
+          //   setBg(imgs[random])
+          // }}
+          // onMouseLeave={() => {
+          //   setBg('white')
+          // }}
         >
           <img src={require(`../img/${bg}.jpg`)} alt={bg} />
           <div className="name">
@@ -168,8 +183,11 @@ const Main = () => {
             })}
           </Fade>
         </div>
+        <p className="wip">
+          The website works best on desktops and laptops, on Chrome or Safari.
+        </p>
       </StyledMain>
-      <Logo hide={0} />
+      {/* <Logo hide={0} /> */}
     </div>
   )
 }
@@ -182,7 +200,55 @@ const StyledMain = styled.div`
   justify-content: center;
   align-items: center;
   perspective: 120vw;
-
+  .wip {
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10vh;
+    font-size: 0.9em;
+    display: none;
+  }
+  .typo {
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    width: 60%;
+    z-index: 10000;
+    .italic {
+      font-style: italic;
+    }
+    p {
+      line-height: 1.7;
+    }
+    span {
+      font-style: normal;
+    }
+  }
+  .circle {
+    width: 150vh;
+    height: 150vh;
+    border-radius: 75vh;
+    top: -25vh;
+    right: -25vh;
+    /* filter: blur(10px); */
+    /* width: 100vw;
+    height: 100vh; */
+    position: absolute;
+    overflow: hidden;
+    z-index: -100;
+    .slide-container2 {
+      height: 100%;
+    }
+    .slide-container2 img {
+      height: 100vh !important;
+      margin-top: 25vh;
+      width: 100%;
+      opacity: 0.8;
+      object-fit: cover;
+    }
+  }
   .card {
     display: block;
     width: 35vw;
@@ -193,7 +259,7 @@ const StyledMain = styled.div`
     transition: 0.5s;
     transform: ${props => props.cx} ${props => props.cy};
     -webkit-transform: ${props => props.cx} ${props => props.cy};
-
+    display: none;
     overflow: hidden;
     position: relative;
 
@@ -219,7 +285,7 @@ const StyledMain = styled.div`
     p {
       transition: 0.5s;
     }
-    :hover p {
+    /* :hover p {
       opacity: 0;
     }
     :hover {
@@ -229,7 +295,7 @@ const StyledMain = styled.div`
       transform: scale(1.2);
       -webkit-transform: scale(1.2);
       opacity: 1;
-    }
+    } */
   }
   .name {
     font-size: 1.2em;

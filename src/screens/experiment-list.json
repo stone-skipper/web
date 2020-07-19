@@ -4,28 +4,32 @@
     "title": "odd interactions",
     "imgSrc": "e01_thumb",
     "link": "/expmnt/odd",
-    "year": 2020
+    "year": 2020,
+    "category": "featured interactives"
   },
   {
     "type": "Facebook Online Hackathon / Spark AR",
     "title": "faceband",
     "imgSrc": "e02_thumb",
     "link": "/expmnt/faceband",
-    "year": 2019
+    "year": 2019,
+    "category": "interactives"
   },
   {
     "type": "code + space prototyping",
     "title": "palm to room",
     "imgSrc": "e03_thumb",
     "link": "/expmnt/ptor",
-    "year": 2019
+    "year": 2019,
+    "category": "interactives"
   },
   {
     "type": "code + process",
     "title": "website v3",
     "imgSrc": "expmnt-img06",
     "link": "/expmnt/website",
-    "year": 2019
+    "year": 2019,
+    "category": "interactives visual"
   },
 
   {
@@ -33,13 +37,15 @@
     "title": "unified interface",
     "imgSrc": "e05_thumb",
     "link": "/expmnt/unified",
-    "year": 2018
+    "year": 2018,
+    "category": "interactives"
   },
   {
     "type": "3d printing + Open source",
     "title": "takeout garden",
     "imgSrc": "expmnt-img04",
     "link": "/works",
-    "year": 2016
+    "year": 2016,
+    "category": "id"
   }
 ]

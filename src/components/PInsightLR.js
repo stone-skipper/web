@@ -31,7 +31,7 @@ const PInsightLR = props => {
                   src={
                     'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
                     item.imgSrc +
-                    '.jpg'
+                    '.png'
                   }
                   alt={item.imgSrc}
                 />

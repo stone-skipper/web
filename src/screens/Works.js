@@ -16,21 +16,59 @@ import EXPERIMENTLIST from '../screens/experiment-list.json'
 
 const Works = () => {
   const [currentMenu, setCurrentMenu] = React.useState(null)
+  const [hoverCategory, setHoverCategory] = React.useState('')
+  var featuredColor = '#EE5F4E'
+  var interColor = '#2FC4DB'
+  var visColor = '#BEB826'
+  var idColor = '#2678BE'
+
+  const handleHover = event => {
+    if (event.target.id === 'featured') {
+      setHoverCategory('featured')
+    } else if (event.target.id === 'interactives') {
+      setHoverCategory('interactives')
+    } else if (event.target.id === 'id') {
+      setHoverCategory('id')
+    } else if (event.target.id === 'visual') {
+      setHoverCategory('visual')
+    }
+    // console.log(
+    //   'event target: ',
+    //   event.target,
+    //   ' / ',
+    //   'event target id: ',
+    //   event.target.id
+    // )
+    // console.log(event.target.id)
+    setCurrentMenu(event.target.id)
+  }
+  const handleMouseOut = event => {
+    // console.log('mouse out from:', event.target.id)
+    setCurrentMenu(null)
+    setHoverCategory(null)
+  }
   return (
     <div>
       <Logo hide={0} />
       <StyledWorks>
-        <div className="hovertag">
-          <a id="highlight">highlight</a>
+        <Tags
+          onMouseOverCapture={handleHover}
+          onMouseOut={handleMouseOut}
+          featuredColor={featuredColor}
+          interColor={interColor}
+          visColor={visColor}
+          idColor={idColor}
+        >
+          <a id="featured">featured</a>
+          <a id="interactives">interactives</a>
           <a id="id">industrial</a>
-          <a id="ux">user experience</a>
-          <a id="artdirection">art direction</a>
-        </div>
+          <a id="visual">visual direction</a>
+        </Tags>
         <StyledProjects>
           <h3>projects /</h3>
           <div className="projectTitle">
             {WORKLIST.map(item => {
-              const { title, type, link, imgSrc, year } = item
+              const { title, type, link, imgSrc, year, category } = item
               return (
                 <WorksTitle
                   key={title}
@@ -39,8 +77,11 @@ const Works = () => {
                   link={link}
                   imgSrc={imgSrc}
                   year={year}
+                  category={category}
                   setCurrentMenu={setCurrentMenu}
                   currentMenu={currentMenu}
+                  setHoverCategory={setHoverCategory}
+                  hoverCategory={hoverCategory}
                 />
               )
             })}
@@ -50,7 +91,7 @@ const Works = () => {
           <h3>experiments /</h3>
           <div className="projectTitle">
             {EXPERIMENTLIST.map(item => {
-              const { title, type, link, imgSrc, year } = item
+              const { title, type, link, imgSrc, year, category } = item
               return (
                 <WorksTitle
                   className="cards-style"
@@ -60,8 +101,11 @@ const Works = () => {
                   link={link}
                   imgSrc={imgSrc}
                   year={year}
+                  category={category}
                   setCurrentMenu={setCurrentMenu}
                   currentMenu={currentMenu}
+                  setCategory={setHoverCategory}
+                  hoverCategory={hoverCategory}
                 />
               )
             })}
@@ -71,7 +115,35 @@ const Works = () => {
     </div>
   )
 }
-
+const Tags = styled.div`
+  top: 19.5vh;
+  font-size: 0.8em;
+  position: absolute;
+  left: 3vw;
+  /* display: none; */
+  a {
+    text-align: left;
+    margin-right: 2vw;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  #featured {
+    color: ${props => props.featuredColor};
+    border-bottom: 1px solid ${props => props.featuredColor};
+  }
+  #id {
+    color: ${props => props.idColor};
+    border-bottom: 1px solid ${props => props.idColor};
+  }
+  #visual {
+    color: ${props => props.visColor};
+    border-bottom: 1px solid ${props => props.visColor};
+  }
+  #interactives {
+    color: ${props => props.interColor};
+    border-bottom: 1px solid ${props => props.interColor};
+  }
+`
 const StyledWorks = styled.div`
   width: 97vw;
   height: 100vh;
@@ -83,21 +155,6 @@ const StyledWorks = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 4.5vw;
 
-  .hovertag {
-    position: absolute;
-    top: 23vh;
-    font-size: 0.8em;
-    display: grid;
-    width: 40vw;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: start;
-    grid-gap: 4vw;
-    display: none;
-    a {
-      background-color: red;
-      text-align: center;
-    }
-  }
   @media (max-width: 1024px) {
     display: block;
     overflow-x: hidden;
