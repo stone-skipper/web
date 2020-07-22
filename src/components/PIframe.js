@@ -18,7 +18,7 @@ const PIframe = props => {
         <iframe src={url} width="100%" title={title} />
       </div>
       <div className="textWrapper">
-        <h1>{title}</h1>
+        {title}
         <p>{desc}</p>
       </div>
     </StyledPIframe>
@@ -53,6 +53,10 @@ const StyledPIframe = styled.div`
       font-size: 2.5em;
       font-weight: 600;
     }
+    h1 span {
+      font-size: 0.5em;
+    }
+
     p {
       font-size: 0.8em;
       font-weight: 300;

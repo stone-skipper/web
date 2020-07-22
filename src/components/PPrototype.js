@@ -90,6 +90,9 @@ const StyledPPrototype = styled.div`
       margin-top: 8vh;
       line-height: 1.3;
     }
+    h1 span {
+      font-size: 0.5em;
+    }
     p {
       width: 80%;
       font-size: 0.8em;

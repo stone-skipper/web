@@ -13,6 +13,8 @@ import PImgLayout01 from '../../components/PImgLayout01'
 import PImgLayout02 from '../../components/PImgLayout02'
 import PImgLayout03 from '../../components/PImgLayout03'
 import PImgLayout04 from '../../components/PImgLayout04'
+import PImgLayout05 from '../../components/PImgLayout05'
+
 import PSlideshow from '../../components/PSlideshow'
 import PDivider from '../../components/PDivider'
 import PDrawing from '../../components/PDrawing'
@@ -37,6 +39,14 @@ import teaser from '../../img/p03_v01.mp4'
 //——*——*——*——*——*——//
 
 const p03Wonderland = () => {
+  var imgGrid = [
+    { imgSrc: 'p03_img69' },
+    { imgSrc: 'p03_img70' },
+    { imgSrc: 'p03_img71' },
+    { imgSrc: 'p03_img68' },
+    { imgSrc: 'p03_img72' },
+    { imgSrc: 'p03_img67' }
+  ]
   var processImg = [
     {
       imgSrc: 'p03_img02',
@@ -160,7 +170,7 @@ const p03Wonderland = () => {
         }
       />
       <PParagraph desc="The film 'Wonderland', directed by Taeyong Kim, is about the AI technology that recreates the deceased in a virtual world. I participated in the art production team for desigining the overall future devices, experiencing whole process of creating a film from a scenario." />
-      <LazyLoad height="110vh" offset={100} once>
+      <LazyLoad height="120vh" offset={100} once>
         <PImgTxt01
           imgs={imgLayout01}
           title="Open-ended exploration for future devices"
@@ -175,14 +185,14 @@ const p03Wonderland = () => {
           txtColor="white"
         />
       </LazyLoad> */}
-      <LazyLoad height="110vh" offset={100} once>
+      {/* <LazyLoad height="110vh" offset={100} once>
         <PImgTxt01
           imgs={imgLayout02}
           title="Concept 'Future Classic'"
           desc="We defined the style of this near-future era as 'Future Classic'. We were inspired by the small sized devices with metal textures from the past, and wanted to reinterpret them into something else."
         />
-      </LazyLoad>
-      <LazyLoad height="100vh" offset={100} once>
+      </LazyLoad> */}
+      <LazyLoad height="110vh" offset={100} once>
         <PSlideshow
           imgs={processImg2}
           title=""
@@ -194,33 +204,30 @@ const p03Wonderland = () => {
       <LazyLoad height="120vh" offset={100} once>
         <PConcept
           imgSrc="p03_img01"
-          concept={<h1>Devices, the 7th character of the film</h1>}
+          concept={<h1>Devices, as the 7th character of the film</h1>}
           user="personas of the narrative"
           desc="Mobile devices in the story are the medium of communication between people and AIs. Though the film envisions the near future, those similar devices but with different tone and manner set the era aside from the current world where the viewers live. "
           txtColor="white"
         />
       </LazyLoad>
-      <LazyLoad height="110vh" offset={100} once>
-        <PImgTxt01
-          imgs={imgLayout03}
-          title="7th character of the film, devices"
-          desc="Quite a lot of communication in the story happens through devices. It was so important to have an distinctive and consistent look of all the devices that appear throughout the narrative."
+      <LazyLoad height="120vh" offset={100} once>
+        <PImgTxt01 imgs={imgLayout03} title="" desc="" />
+      </LazyLoad>
+      <LazyLoad height="120vh" offset={100} once>
+        <PVideo
+          videoSrc={teaser}
+          wide={true}
+          playing={true}
+          loop={true}
+          muted={true}
+          controls={false}
         />
       </LazyLoad>
-
-      <PVideo
-        videoSrc={teaser}
-        wide={true}
-        playing={true}
-        loop={true}
-        muted={true}
-        controls={false}
-      />
 
       <LazyLoad height="120vh" offset={100} once>
         <PImgTxt01wide
           imgSrc="p03_img43"
-          title="mobile devices for 7 personas"
+          title="mobile devices for seven personas"
           desc=""
           txtColor="rgba(255,255,255,0.2)"
         />
@@ -283,9 +290,9 @@ const p03Wonderland = () => {
           txtColor="white"
         />
       </LazyLoad>
-      <LazyLoad height="120vh" offset={100} once>
+      {/* <LazyLoad height="120vh" offset={100} once>
         <PImgLayout01 imgSrc="p03_img30" />
-      </LazyLoad>
+      </LazyLoad> */}
       <LazyLoad height="100vh" offset={100} once>
         <PImgComposition img1="p03_img03" img2="p03_img18" img3="p03_img19" />
       </LazyLoad>
@@ -315,6 +322,9 @@ const p03Wonderland = () => {
           desc="We tested different concepts for each devices, but many of them were not selected or omited for some reasons. But those explorations were truly inspiring, focusing emotional aspect of how it looks, rather than logical facts.  "
           txtColor="grey"
         />
+      </LazyLoad>
+      <LazyLoad height="110vh" offset={100} once>
+        <PImgLayout05 imgs={imgGrid} />
       </LazyLoad>
       <LazyLoad height="70vh" offset={100} once>
         <PProcess imgs={processImg} />

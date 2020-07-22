@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import PCover from '../../components/PCover'
 import POutro from '../../components/POutro'
 import PPrototype from '../../components/PPrototype'
+import PTitle from '../../components/PTitle'
+
 import PIframe from '../../components/PIframe'
 import PParagraph from '../../components/PParagraph'
 import PDivider from '../../components/PDivider'
@@ -67,11 +69,15 @@ const e01Odd = () => {
         }
       />
       <PParagraph desc="Framer X is a prototyping tool, based on ReactJS. It requires a basic knowledge of coding, but it's a great tool to create working functions and interactions. Those are some of prototypes made with Framer X. I was more interested in physical interactions or multi-device interactions rather than microinteractions of UI. " />
+      <PTitle title="01 physical interactions/" />
+      <PDivider />
+
       <PPrototype
         videoSrc="https://vimeo.com/415208247"
         title={
           <h1>
-            01/ <br />
+            <span>01/ </span>
+            <br />
             Tilt to Scroll
           </h1>
         }
@@ -90,33 +96,10 @@ const e01Odd = () => {
       <PDivider />
 
       <PPrototype
-        videoSrc="https://vimeo.com/415208441"
-        title={
-          <h1>
-            02/ <br />
-            Morse code
-          </h1>
-        }
-        desc="Inspired by the film 'Parasite' and the 'Stranger Things'. Longpress and shortpress for trying your own morse code. "
-        links={[
-          {
-            linkSrc: 'https://02oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
-          }
-        ]}
-      />
-      <PIframe url="https://02oddproject.netlify.com/" title="" desc="" />
-      <PDivider />
-
-      <PPrototype
         videoSrc="https://vimeo.com/417935428"
         title={
           <h1>
-            03/ <br />
+            <span>02/ </span> <br />
             Fake-fold
           </h1>
         }
@@ -129,107 +112,11 @@ const e01Odd = () => {
         ]}
       />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/415421283"
-        title={
-          <h1>
-            04/ <br />
-            Nasa Astronomy picture of the day
-          </h1>
-        }
-        desc="First component by me. Using Nasa APOD API, you can choose a date to load images of fascinating images from the space."
-        links={[
-          {
-            linkSrc:
-              'https://packages.framer.com/package/lsm4968/nasa-astronomy-picture-of-the-day',
-            linkTitle: 'Component Download'
-          }
-        ]}
-      />
-      <PDivider />
-      <PPrototype
-        videoSrc="https://vimeo.com/417905262"
-        title={
-          <h1>
-            05/ <br />
-            Cylinder scroll
-          </h1>
-        }
-        desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
-        links={[
-          {
-            linkSrc: 'https://05oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
-          }
-        ]}
-      />
-      <PIframe url="https://05oddproject.netlify.com/" title="" desc="" />
-      <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/417937671"
-        title={
-          <h1>
-            06/ <br />
-            Wireless game controller
-          </h1>
-        }
-        desc="Using deviceorientation value from the mobile to control the position and rotation of the camera in Aframe environment. Aframe.io + socket.io"
-        links={[]}
-      />
-      <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/415208599"
-        title={
-          <h1>
-            08/ <br />
-            Annoying Player
-          </h1>
-        }
-        desc="Music goes on as you move your finger on the screen. Keep your fingers moving on the screen to keep listening!"
-        links={[
-          {
-            linkSrc: 'https://08oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
-          }
-        ]}
-      />
-      <PIframe url="https://08oddproject.netlify.com/" title="" desc="" />
-      <PDivider />
-
-      <PIframe
-        url="https://09oddproject.netlify.com/"
-        title=" 09/ Nintendo Rhythm Heaven"
-        desc="Nintendo Rhythm Heaven's pen interaction. Tap and stay, or flick!"
-        links={[
-          {
-            linkSrc: 'https://09oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
-          }
-        ]}
-      />
-
-      <PDivider />
-
       <PPrototype
         videoSrc="https://vimeo.com/415208537"
         title={
           <h1>
-            10/ <br />
+            <span>03/ </span> <br />
             Joystick
           </h1>
         }
@@ -249,10 +136,151 @@ const e01Odd = () => {
       <PIframe url="https://10oddproject.netlify.com/" title="" desc="" />
       <PDivider />
       <PPrototype
+        videoSrc="https://vimeo.com/417937671"
+        title={
+          <h1>
+            <span>04/ </span> <br />
+            Wireless game controller
+          </h1>
+        }
+        desc="Using deviceorientation value from the mobile to control the position and rotation of the camera in Aframe environment. Aframe.io + socket.io"
+        links={[]}
+      />
+      <PDivider />
+
+      <PPrototype
+        videoSrc="https://vimeo.com/431521800"
+        title={
+          <h1>
+            <span>05/ </span> <br />
+            Flipbook
+          </h1>
+        }
+        desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into a e-book interaction. "
+        links={[]}
+      />
+
+      <PDivider />
+
+      <PPrototype
+        videoSrc="https://vimeo.com/431521272"
+        title={
+          <h1>
+            <span>06/ </span> <br />
+            Pair phones
+          </h1>
+        }
+        desc="The problem with the some prototypes above is that they cannot be shared. They're connected to same socket so when someone access to one side of the prototypes, they cannot work as they should do. So this component is to pair two mobiles with the random code as their rooms. "
+        links={[
+          {
+            linkSrc: 'https://pair-a.netlify.app',
+            linkTitle: 'Pair A - with the random code generated'
+          },
+          {
+            linkSrc: 'https://pair-b.netlify.app',
+            linkTitle: 'Pair B - with the number pad'
+          }
+        ]}
+      />
+      <PDivider />
+
+      <PIframe
+        url="https://09oddproject.netlify.com/"
+        title={
+          <h1>
+            <span>07/ </span> Nintendo Rhythm Heaven
+          </h1>
+        }
+        desc="Nintendo Rhythm Heaven's pen interaction. Tap and stay, or flick!"
+        links={[
+          {
+            linkSrc: 'https://09oddproject.netlify.com/',
+            linkTitle: 'Try by yourself'
+          },
+          {
+            linkSrc: '',
+            linkTitle: 'Project File'
+          }
+        ]}
+      />
+
+      <PTitle title="02 odd interfaces/" />
+      <PDivider />
+
+      <PPrototype
+        videoSrc="https://vimeo.com/415208441"
+        title={
+          <h1>
+            <span>01/ </span>
+            <br />
+            Morse code
+          </h1>
+        }
+        desc="Inspired by the film 'Parasite' and the 'Stranger Things'. Longpress and shortpress for trying your own morse code. "
+        links={[
+          {
+            linkSrc: 'https://02oddproject.netlify.com/',
+            linkTitle: 'Try by yourself'
+          },
+          {
+            linkSrc: '',
+            linkTitle: 'Project File'
+          }
+        ]}
+      />
+      <PIframe url="https://02oddproject.netlify.com/" title="" desc="" />
+      <PDivider />
+      <PPrototype
+        videoSrc="https://vimeo.com/417905262"
+        title={
+          <h1>
+            <span>02/</span> <br />
+            Cylinder scroll
+          </h1>
+        }
+        desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
+        links={[
+          {
+            linkSrc: 'https://05oddproject.netlify.com/',
+            linkTitle: 'Try by yourself'
+          },
+          {
+            linkSrc: '',
+            linkTitle: 'Project File'
+          }
+        ]}
+      />
+      <PIframe url="https://05oddproject.netlify.com/" title="" desc="" />
+      <PDivider />
+
+      <PPrototype
+        videoSrc="https://vimeo.com/415208599"
+        title={
+          <h1>
+            <span>03/</span> <br />
+            Annoying Player
+          </h1>
+        }
+        desc="Music goes on as you move your finger on the screen. Keep your fingers moving on the screen to keep listening!"
+        links={[
+          {
+            linkSrc: 'https://08oddproject.netlify.com/',
+            linkTitle: 'Try by yourself'
+          },
+          {
+            linkSrc: '',
+            linkTitle: 'Project File'
+          }
+        ]}
+      />
+      <PIframe url="https://08oddproject.netlify.com/" title="" desc="" />
+      <PDivider />
+
+      <PPrototype
         videoSrc="https://vimeo.com/417949198"
         title={
           <h1>
-            11/ <br />
+            <span>04/</span> <br />
             Color Timer
           </h1>
         }
@@ -270,42 +298,49 @@ const e01Odd = () => {
       />
       <PIframe url="https://11oddproject.netlify.com/" title="" desc="" />
 
+      <PTitle title="components/" />
       <PDivider />
+
       <PPrototype
-        videoSrc="https://vimeo.com/431521272"
+        videoSrc="https://vimeo.com/440681572"
         title={
           <h1>
-            12/ <br />
-            Pair phones
+            <span>01/</span>
+            <br />
+            Nasa Astronomy picture of the day
           </h1>
         }
-        desc="The problem with the some prototypes above is that they cannot be shared. They're connected to same socket so when someone access to one side of the prototypes, they cannot work as they should be. So this component is to pair two mobiles with the random code as their rooms. "
+        desc="First component by me. Using Nasa APOD API, you can choose a date to load images of fascinating images from the space."
         links={[
           {
-            linkSrc: 'https://pair-a.netlify.app',
-            linkTitle: 'Pair A - with the random code generated'
-          },
-          {
-            linkSrc: 'https://pair-b.netlify.app',
-            linkTitle: 'Pair B - with the number pad'
+            linkSrc:
+              'https://packages.framer.com/package/lsm4968/nasa-astronomy-picture-of-the-day',
+            linkTitle: 'Component Download'
           }
         ]}
       />
-
       <PDivider />
+
       <PPrototype
-        videoSrc="https://vimeo.com/431521800"
+        videoSrc="https://vimeo.com/440683796"
         title={
           <h1>
-            13/ <br />
-            Flipbook
+            <span>02/</span>
+            <br />
+            Aframe environment component
           </h1>
         }
-        desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into a e-book interaction. "
-        links={[]}
+        desc="simple aframe environment set-up with a list of basic environments to choose from."
+        links={[
+          {
+            linkSrc:
+              'https://packages.framer.com/package/lsm4968/a-frame-environment-component',
+            linkTitle: 'Component Download'
+          }
+        ]}
       />
-
       <PDivider />
+
       <PReferences title="References" references={references} />
       <PDivider />
 
