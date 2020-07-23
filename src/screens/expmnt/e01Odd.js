@@ -16,6 +16,7 @@ import PReferences from '../../components/PReferences'
 // 3. for style
 import styled from 'styled-components'
 import Close from '@material-ui/icons/Close'
+import LazyLoad from 'react-lazy-load'
 
 // 4. Static Resources
 
@@ -71,67 +72,71 @@ const e01Odd = () => {
       <PParagraph desc="Framer X is a prototyping tool, based on ReactJS. It requires a basic knowledge of coding, but it's a great tool to create working functions and interactions. Those are some of prototypes made with Framer X. I was more interested in physical interactions or multi-device interactions rather than microinteractions of UI. " />
       <PTitle title="01 physical interactions/" />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/415208247"
-        title={
-          <h1>
-            <span>01/ </span>
-            <br />
-            Tilt to Scroll
-          </h1>
-        }
-        desc="Scroll interaction by tilting a device. Especially good for night-time reading "
-        links={[
-          {
-            linkSrc: 'https://01oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/415208247"
+          title={
+            <h1>
+              <span>01/ </span>
+              <br />
+              Tilt to Scroll
+            </h1>
           }
-        ]}
-      />
+          desc="Scroll interaction by tilting a device. Especially good for night-time reading. Works only on Android, and under ios 13."
+          links={[
+            {
+              linkSrc: 'https://01oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/417935428"
-        title={
-          <h1>
-            <span>02/ </span> <br />
-            Fake-fold
-          </h1>
-        }
-        desc="Find two smartphone to build cutting-edge foldable phone. The cheapest foldable display in the market :)"
-        links={[
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/417935428"
+          title={
+            <h1>
+              <span>02/ </span> <br />
+              Fake-fold
+            </h1>
           }
-        ]}
-      />
+          desc="Find two smartphone to build cutting-edge foldable phone. The cheapest foldable display in the market :)"
+          links={[
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PDivider />
-      <PPrototype
-        videoSrc="https://vimeo.com/415208537"
-        title={
-          <h1>
-            <span>03/ </span> <br />
-            Joystick
-          </h1>
-        }
-        desc="Another game controller with"
-        links={[
-          {
-            linkSrc: 'https://10oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/415208537"
+          title={
+            <h1>
+              <span>03/ </span> <br />
+              Joystick
+            </h1>
           }
-        ]}
-      />
+          desc="Another game controller with"
+          links={[
+            {
+              linkSrc: 'https://10oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
 
       <PIframe url="https://10oddproject.netlify.com/" title="" desc="" />
       <PDivider />
@@ -147,41 +152,43 @@ const e01Odd = () => {
         links={[]}
       />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/431521800"
-        title={
-          <h1>
-            <span>05/ </span> <br />
-            Flipbook
-          </h1>
-        }
-        desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into a e-book interaction. "
-        links={[]}
-      />
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/431521800"
+          title={
+            <h1>
+              <span>05/ </span> <br />
+              Flipbook
+            </h1>
+          }
+          desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into a e-book interaction. "
+          links={[]}
+        />
+      </LazyLoad>
 
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/431521272"
-        title={
-          <h1>
-            <span>06/ </span> <br />
-            Pair phones
-          </h1>
-        }
-        desc="The problem with the some prototypes above is that they cannot be shared. They're connected to same socket so when someone access to one side of the prototypes, they cannot work as they should do. So this component is to pair two mobiles with the random code as their rooms. "
-        links={[
-          {
-            linkSrc: 'https://pair-a.netlify.app',
-            linkTitle: 'Pair A - with the random code generated'
-          },
-          {
-            linkSrc: 'https://pair-b.netlify.app',
-            linkTitle: 'Pair B - with the number pad'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/431521272"
+          title={
+            <h1>
+              <span>06/ </span> <br />
+              Pair phones
+            </h1>
           }
-        ]}
-      />
+          desc="The problem with the some prototypes above is that they cannot be shared. They're connected to same socket so when someone access to one side of the prototypes, they cannot work as they should do. So this component is to pair two mobiles with the random code as their rooms. "
+          links={[
+            {
+              linkSrc: 'https://pair-a.netlify.app',
+              linkTitle: 'Pair A - with the random code generated'
+            },
+            {
+              linkSrc: 'https://pair-b.netlify.app',
+              linkTitle: 'Pair B - with the number pad'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PDivider />
 
       <PIframe
@@ -206,139 +213,146 @@ const e01Odd = () => {
 
       <PTitle title="02 odd interfaces/" />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/415208441"
-        title={
-          <h1>
-            <span>01/ </span>
-            <br />
-            Morse code
-          </h1>
-        }
-        desc="Inspired by the film 'Parasite' and the 'Stranger Things'. Longpress and shortpress for trying your own morse code. "
-        links={[
-          {
-            linkSrc: 'https://02oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/415208441"
+          title={
+            <h1>
+              <span>01/ </span>
+              <br />
+              Morse code
+            </h1>
           }
-        ]}
-      />
+          desc="Inspired by the film 'Parasite' and the 'Stranger Things'. Longpress and shortpress for trying your own morse code. "
+          links={[
+            {
+              linkSrc: 'https://02oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PIframe url="https://02oddproject.netlify.com/" title="" desc="" />
       <PDivider />
-      <PPrototype
-        videoSrc="https://vimeo.com/417905262"
-        title={
-          <h1>
-            <span>02/</span> <br />
-            Cylinder scroll
-          </h1>
-        }
-        desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
-        links={[
-          {
-            linkSrc: 'https://05oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/417905262"
+          title={
+            <h1>
+              <span>02/</span> <br />
+              Cylinder scroll
+            </h1>
           }
-        ]}
-      />
+          desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
+          links={[
+            {
+              linkSrc: 'https://05oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PIframe url="https://05oddproject.netlify.com/" title="" desc="" />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/415208599"
-        title={
-          <h1>
-            <span>03/</span> <br />
-            Annoying Player
-          </h1>
-        }
-        desc="Music goes on as you move your finger on the screen. Keep your fingers moving on the screen to keep listening!"
-        links={[
-          {
-            linkSrc: 'https://08oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/415208599"
+          title={
+            <h1>
+              <span>03/</span> <br />
+              Annoying Player
+            </h1>
           }
-        ]}
-      />
+          desc="Music goes on as you move your finger on the screen. Keep your fingers moving on the screen to keep listening!"
+          links={[
+            {
+              linkSrc: 'https://08oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PIframe url="https://08oddproject.netlify.com/" title="" desc="" />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/417949198"
-        title={
-          <h1>
-            <span>04/</span> <br />
-            Color Timer
-          </h1>
-        }
-        desc="One minute timer with random color pattern"
-        links={[
-          {
-            linkSrc: 'https://11oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/417949198"
+          title={
+            <h1>
+              <span>04/</span> <br />
+              Color Timer
+            </h1>
           }
-        ]}
-      />
+          desc="One minute timer with random color pattern"
+          links={[
+            {
+              linkSrc: 'https://11oddproject.netlify.com/',
+              linkTitle: 'Try by yourself'
+            },
+            {
+              linkSrc: '',
+              linkTitle: 'Project File'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PIframe url="https://11oddproject.netlify.com/" title="" desc="" />
 
       <PTitle title="components/" />
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/440681572"
-        title={
-          <h1>
-            <span>01/</span>
-            <br />
-            Nasa Astronomy picture of the day
-          </h1>
-        }
-        desc="First component by me. Using Nasa APOD API, you can choose a date to load images of fascinating images from the space."
-        links={[
-          {
-            linkSrc:
-              'https://packages.framer.com/package/lsm4968/nasa-astronomy-picture-of-the-day',
-            linkTitle: 'Component Download'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/440681572"
+          title={
+            <h1>
+              <span>01/</span>
+              <br />
+              Nasa Astronomy picture of the day
+            </h1>
           }
-        ]}
-      />
+          desc="First component by me. Using Nasa APOD API, you can choose a date to load images of fascinating images from the space."
+          links={[
+            {
+              linkSrc:
+                'https://packages.framer.com/package/lsm4968/nasa-astronomy-picture-of-the-day',
+              linkTitle: 'Component Download'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PDivider />
-
-      <PPrototype
-        videoSrc="https://vimeo.com/440683796"
-        title={
-          <h1>
-            <span>02/</span>
-            <br />
-            Aframe environment component
-          </h1>
-        }
-        desc="simple aframe environment set-up with a list of basic environments to choose from."
-        links={[
-          {
-            linkSrc:
-              'https://packages.framer.com/package/lsm4968/a-frame-environment-component',
-            linkTitle: 'Component Download'
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/440683796"
+          title={
+            <h1>
+              <span>02/</span>
+              <br />
+              Aframe environment component
+            </h1>
           }
-        ]}
-      />
+          desc="simple aframe environment set-up with a list of basic environments to choose from."
+          links={[
+            {
+              linkSrc:
+                'https://packages.framer.com/package/lsm4968/a-frame-environment-component',
+              linkTitle: 'Component Download'
+            }
+          ]}
+        />
+      </LazyLoad>
       <PDivider />
 
       <PReferences title="References" references={references} />
