@@ -82,7 +82,7 @@ const e01Odd = () => {
               Tilt to Scroll
             </h1>
           }
-          desc="Scroll interaction by tilting a device. Especially good for night-time reading. Works only on Android, and under ios 13."
+          desc="Scroll interaction by tilting a device. Especially good for night-time reading. Framer app with +ios 13 doesn't support device orientation, so this prototype only works on Android and under ios 13."
           links={[
             {
               linkSrc: 'https://01oddproject.netlify.com/',
@@ -124,7 +124,7 @@ const e01Odd = () => {
               Joystick
             </h1>
           }
-          desc="Another game controller with"
+          desc="Game controller with 2D joystick."
           links={[
             {
               linkSrc: 'https://10oddproject.netlify.com/',
@@ -139,6 +139,8 @@ const e01Odd = () => {
       </LazyLoad>
 
       <PIframe url="https://10oddproject.netlify.com/" title="" desc="" />
+      <PIframe url="https://12oddproject.netlify.com/" title="" desc="" />
+
       <PDivider />
       <PPrototype
         videoSrc="https://vimeo.com/417937671"
@@ -161,7 +163,7 @@ const e01Odd = () => {
               Flipbook
             </h1>
           }
-          desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into a e-book interaction. "
+          desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into an e-book interaction. "
           links={[]}
         />
       </LazyLoad>
