@@ -20,8 +20,8 @@ const Contact = () => {
           participating in
           <span> future vision project for MR device</span>.
           <br />
-          I'd love to talk about any
-          <span> IT / UX projects for products and spaces</span>
+          I'd love to talk about
+          <span> new UX / tech related projects for products and spaces</span>
         </Intro>
         <ContactHere>
           <img src={require(`../img/email.svg`)} alt="email" />
