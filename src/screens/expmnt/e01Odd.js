@@ -121,7 +121,7 @@ const e01Odd = () => {
           title={
             <h1>
               <span>03/ </span> <br />
-              Joystick
+              Controller and inputs
             </h1>
           }
           desc="Game controller with 2D joystick."
@@ -138,9 +138,31 @@ const e01Odd = () => {
         />
       </LazyLoad>
 
-      <PIframe url="https://10oddproject.netlify.com/" title="" desc="" />
-      <PIframe url="https://12oddproject.netlify.com/" title="" desc="" />
-
+      <PIframe
+        url="https://10oddproject.netlify.com/"
+        title={<h1>Joystick</h1>}
+        desc=""
+      />
+      <PIframe
+        url="https://12oddproject.netlify.com/"
+        title={<h1>Trackpad</h1>}
+        desc=""
+      />
+      <PIframe
+        url="https://09oddproject.netlify.com/"
+        title={<h1>Nintendo Rhythm Heaven</h1>}
+        desc="Nintendo Rhythm Heaven's pen interaction. Tap and stay, or flick!"
+        links={[
+          {
+            linkSrc: 'https://09oddproject.netlify.com/',
+            linkTitle: 'Try by yourself'
+          },
+          {
+            linkSrc: '',
+            linkTitle: 'Project File'
+          }
+        ]}
+      />
       <PDivider />
       <PPrototype
         videoSrc="https://vimeo.com/417937671"
@@ -191,27 +213,6 @@ const e01Odd = () => {
           ]}
         />
       </LazyLoad>
-      <PDivider />
-
-      <PIframe
-        url="https://09oddproject.netlify.com/"
-        title={
-          <h1>
-            <span>07/ </span> Nintendo Rhythm Heaven
-          </h1>
-        }
-        desc="Nintendo Rhythm Heaven's pen interaction. Tap and stay, or flick!"
-        links={[
-          {
-            linkSrc: 'https://09oddproject.netlify.com/',
-            linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
-          }
-        ]}
-      />
 
       <PTitle title="02 odd interfaces/" />
       <PDivider />
