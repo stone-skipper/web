@@ -257,7 +257,8 @@ const e01Odd = () => {
               linkTitle: 'Try by yourself'
             },
             {
-              linkSrc: '',
+              linkSrc:
+                'https://www.dropbox.com/s/rq3ic0l4u3qnnma/cylinderscroll_share.framerx',
               linkTitle: 'Project File'
             }
           ]}
