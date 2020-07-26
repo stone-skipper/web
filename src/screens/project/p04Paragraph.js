@@ -156,7 +156,7 @@ and collect sentences across all the mediums"
       />
       <PIframe
         url="https://paragraph-proto.netlify.app"
-        title="prototype for ux experiment"
+        title={<h1>prototype for ux experiment</h1>}
         desc="I built a quick prototype to explain how the interface works with a buttton and a light. But as I made this step-to-step guide, I could realize my initial idea cannot really work. Though it is an interaction on a screen, it was detailed enough to test out the ux. "
       />
 

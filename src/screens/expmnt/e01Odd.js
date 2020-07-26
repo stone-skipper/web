@@ -89,7 +89,8 @@ const e01Odd = () => {
               linkTitle: 'Try by yourself'
             },
             {
-              linkSrc: '',
+              linkSrc:
+                'https://www.dropbox.com/s/mx653qo9eoo9lya/tiltscroll_share.framerx',
               linkTitle: 'Project File'
             }
           ]}
@@ -106,12 +107,7 @@ const e01Odd = () => {
             </h1>
           }
           desc="Find two smartphone to build cutting-edge foldable phone. The cheapest foldable display in the market :)"
-          links={[
-            {
-              linkSrc: '',
-              linkTitle: 'Project File'
-            }
-          ]}
+          links={[]}
         />
       </LazyLoad>
       <PDivider />
@@ -129,10 +125,6 @@ const e01Odd = () => {
             {
               linkSrc: 'https://10oddproject.netlify.com/',
               linkTitle: 'Try by yourself'
-            },
-            {
-              linkSrc: '',
-              linkTitle: 'Project File'
             }
           ]}
         />
@@ -156,10 +148,6 @@ const e01Odd = () => {
           {
             linkSrc: 'https://09oddproject.netlify.com/',
             linkTitle: 'Try by yourself'
-          },
-          {
-            linkSrc: '',
-            linkTitle: 'Project File'
           }
         ]}
       />
@@ -233,7 +221,8 @@ const e01Odd = () => {
               linkTitle: 'Try by yourself'
             },
             {
-              linkSrc: '',
+              linkSrc:
+                'https://www.dropbox.com/s/jng02vduba7cjfo/Morse.framerx',
               linkTitle: 'Project File'
             }
           ]}
