@@ -41,7 +41,7 @@ const e01Odd = () => {
       desc: 'from Framer Support'
     },
     {
-      url: 'https://www.framer.com/support/using-framer-x/live-data/',
+      url: 'https://www.facebook.com/groups/framerkorea/',
       urltitle: 'Framer X Weekly challenge',
       desc: 'from Framer Korea'
     }
