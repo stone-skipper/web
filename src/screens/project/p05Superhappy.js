@@ -200,12 +200,12 @@ const p05Superhappy = () => {
       <POutro
         line1="Team project with Jiyoon Han / Hyunmyung Lee / Yesol Song"
         line2={
-          <plaintext>
+          <h2>
             I, as an art director, designed the main poster, the website, and
             the guidelines for other assets.
             <br /> We cooperated with space design team for setting the space
             and keep the consistent design tone and manner.{' '}
-          </plaintext>
+          </h2>
         }
       />
     </Styledp05Superhappy>
@@ -214,12 +214,11 @@ const p05Superhappy = () => {
 
 const Styledp05Superhappy = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
-  /* scroll-snap-type: y mandatory; */
+  overflow-x: hidden;
 
   & .closeButton {
     position: fixed;

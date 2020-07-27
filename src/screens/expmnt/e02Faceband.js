@@ -71,7 +71,13 @@ const e02Faceband = () => {
       <PProcess imgs={processImg} />
       <POutro
         line1="1 months online hackathon challenge with the team from Facebook Community Seoul"
-        line2="I collaborated with developers and UI designers, and my role was to create a UX flow and design 3d assets for the filter."
+        line2={
+          <h2>
+            I collaborated with developers and UI designers, <br />
+            and my role was to create a UX flow and design 3d assets for the
+            filter.
+          </h2>
+        }
       />
     </Stylede02Faceband>
   )
@@ -79,17 +85,22 @@ const e02Faceband = () => {
 
 const Stylede02Faceband = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
+  overflow-x: hidden;
+
   & .closeButton {
     position: fixed;
     top: 3vw;
     right: 3vw;
     font-size: 2em;
     z-index: 100000000;
+    @media (max-width: 1024px) {
+      top: 5vw;
+      right: 5vw;
+    }
   }
 `
 

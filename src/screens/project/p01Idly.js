@@ -186,7 +186,7 @@ for the rest, I came up with a timer for relaxation."
       <POutro
         line1="Personal project - Inspired and motivated from my personal experience of ‘burnout syndrome’."
         line2={
-          <plaintext>
+          <h2>
             I feel the society is full of struggles to move forward, get better,
             and compete with others all the time. <br /> At some point, I was
             exhausted by all the pressures and struggles, but I didn't really
@@ -194,7 +194,7 @@ for the rest, I came up with a timer for relaxation."
             <br /> This project was to devise something that can help people
             like me, but also was to deliver a message on what's necessary tool
             for our life.
-          </plaintext>
+          </h2>
         }
       />
     </Styledp01Idly>

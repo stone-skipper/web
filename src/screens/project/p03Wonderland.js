@@ -332,7 +332,7 @@ const p03Wonderland = () => {
       <POutro
         line1="Props designer"
         line2={
-          <plaintext>
+          <h2>
             The production team focused on creating a visual that looks familiar
             in the way we live, but with different tone and manner. <br />I
             mainly focused on the designs of devices and main props, and
@@ -344,7 +344,7 @@ const p03Wonderland = () => {
             <br />I was so lucky to experience the process of making a sci-fi
             film and be a part of the work. <br /> Art Direction : Ryu Seonghee
             / Seo Sungkyung
-          </plaintext>
+          </h2>
         }
       />
     </Styledp03Wonderland>

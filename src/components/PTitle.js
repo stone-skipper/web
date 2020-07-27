@@ -29,6 +29,11 @@ const StyledPTitle = styled.div`
   font-size: 2.8em;
   font-weight: 600;
   border-top: 1px solid white;
+  @media (max-width: 1024px) {
+    margin: 0 5vw;
+    margin-top: 40vh;
+    width: 90vw;
+  }
 `
 
 export default PTitle

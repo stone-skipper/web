@@ -31,6 +31,9 @@ const StyledPIframe = styled.div`
   padding: 0 3vw;
   color: white;
   margin-top: 20vh;
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 
   .iframeWrapper {
     width: 94vw;
@@ -41,14 +44,22 @@ const StyledPIframe = styled.div`
       width: 100%;
       height: 100%;
     }
+    @media (max-width: 1024px) {
+      width: 100vw;
+      height: 60vh;
+    }
   }
 
   .textWrapper {
-    display: none;
     width: 94vw;
     margin-top: 3vh;
     display: grid;
     grid-template-columns: 62.66vw 31.33vw;
+    @media (max-width: 1024px) {
+      width: 90vw;
+      display: block;
+      margin-left: 5vw;
+    }
     h1 {
       font-size: 2.5em;
       font-weight: 600;

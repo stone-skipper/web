@@ -354,12 +354,12 @@ const e01Odd = () => {
       <POutro
         line1="Personal study project"
         line2={
-          <plaintext>
+          <h2>
             This is the archive of prototypes I made with Framer X, as a part of
             learning a new tool. <br />
             With this new tool, I focused more creating new interactions and
             functions rather than user interface aspect.
-          </plaintext>
+          </h2>
         }
       />
     </Stylede01Odd>
@@ -368,17 +368,22 @@ const e01Odd = () => {
 
 const Stylede01Odd = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
+  overflow-x: hidden;
+
   & .closeButton {
     position: fixed;
     top: 3vw;
     right: 3vw;
     font-size: 2em;
     z-index: 100000000;
+    @media (max-width: 1024px) {
+      top: 5vw;
+      right: 5vw;
+    }
   }
 `
 

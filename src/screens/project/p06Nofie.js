@@ -256,13 +256,13 @@ const p06Nofie = () => {
       <POutro
         line1="2017 HID graudation exhibition - product design part"
         line2={
-          <plaintext>
+          <h2>
             Team project (contribution : 40%) with Yoojin Choi, Jieun Kim
             <br />
             This project involved various field of design, including industrial
             design, service design, and branding design, motion graphics, and
             working prototype with a working web.
-          </plaintext>
+          </h2>
         }
       />
     </Styledp06Nofie>
@@ -271,12 +271,11 @@ const p06Nofie = () => {
 
 const Styledp06Nofie = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
-  /* scroll-snap-type: y mandatory; */
+  overflow-x: hidden;
 
   & .closeButton {
     position: fixed;
@@ -284,6 +283,10 @@ const Styledp06Nofie = styled.div`
     right: 3vw;
     font-size: 2em;
     z-index: 100000000;
+    @media (max-width: 1024px) {
+      top: 5vw;
+      right: 5vw;
+    }
   }
 `
 

@@ -184,14 +184,14 @@ and collect sentences across all the mediums"
       <POutro
         line1="Personal project for the class 'Product Design Studio'"
         line2={
-          <plaintext>
+          <h2>
             I personally prefer reading texts on paper. But in recent years, my
             reading habits have changed, with different mediums of reading.
             <br />I thought the traditional way of reading could be changed,
             when it embraces some technology.
             <br /> This is a concept design, but I really hope I can have this
             kind of device.
-          </plaintext>
+          </h2>
         }
       />
     </Styledp04Paragraph>
@@ -200,12 +200,11 @@ and collect sentences across all the mediums"
 
 const Styledp04Paragraph = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
-  /* scroll-snap-type: y mandatory; */
+  overflow-x: hidden;
 
   & .closeButton {
     position: fixed;
@@ -213,6 +212,10 @@ const Styledp04Paragraph = styled.div`
     right: 3vw;
     font-size: 2em;
     z-index: 100000000;
+    @media (max-width: 1024px) {
+      top: 5vw;
+      right: 5vw;
+    }
   }
 `
 

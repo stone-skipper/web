@@ -94,13 +94,13 @@ const e03PtoR = () => {
       <POutro
         line1="Exhibition project from SEVENSTARS"
         line2={
-          <plaintext>
+          <h2>
             SEVENSTARS is a group of artists, developers, and designers who are
             interested in bringing media and interactivity into a space.
             <br />I participated in this exhibition as an artist and an art
             director for the whole exhibition, designing the graphic assets for
             the event. <br /> tools I used : cinema4D / Aframe.io
-          </plaintext>
+          </h2>
         }
       />
     </Stylede03PtoR>
@@ -109,17 +109,22 @@ const e03PtoR = () => {
 
 const Stylede03PtoR = styled.div`
   width: 100vw;
-  height: 100%;
-  background-color: red;
+  height: max-content;
   color: white;
   z-index: 10000;
   position: absolute;
+  overflow-x: hidden;
+
   & .closeButton {
     position: fixed;
     top: 3vw;
     right: 3vw;
     font-size: 2em;
     z-index: 100000000;
+    @media (max-width: 1024px) {
+      top: 5vw;
+      right: 5vw;
+    }
   }
 `
 

@@ -16,17 +16,20 @@ const Contact = () => {
       <Logo hide={0} />
       <StyledContact>
         <Intro>
-          I’m currently in <span>Seoul, Korea,</span> <br />
-          participating in
-          <span> future vision project for MR device</span>.
+          <span>🙋 Hi there! 🙋</span>
           <br />
-          Looking for new working opportunities in
+          Looking for new job opportunities in
           <span>
             {' '}
             designing advanced ux / creative experience
             <br />
-            for technology, physical products and spaces
+            for emerging technology, physical products and spaces.
           </span>
+          <br />
+          <br />
+          currently in <span>Seoul, Korea,</span> participating in
+          <span> a project about the Mixed Reality & Entertainment.</span>
+          <br />
         </Intro>
         <ContactHere>
           <img src={require(`../img/email.svg`)} alt="email" />
@@ -62,7 +65,7 @@ const StyledContact = styled.div`
   width: 97vw;
   margin-left: 3vw;
   height: 100vh;
-  padding-top: 30vh;
+  padding-top: 25vh;
   @media (max-width: 1024px) {
     padding-top: 25vh;
     height: 90vh;

@@ -338,14 +338,14 @@ The Campfire environment collect their natural conversations as an insightful da
       <POutro
         line1="Personal project for an internship in Dell Experience Design Group, 2018, 9 months"
         line2={
-          <plaintext>
+          <h2>
             For the future experience design project, I chose the topic '
             collaboration' by myself. <br />
             With this project I wanted to provide insights on the projects in
             the company and work devices on collaboration aspect. <br />
             The project was supported and mentored by the Dell Advanced Design
             Team, and shared with executives and other teams for insights.
-          </plaintext>
+          </h2>
         }
       />
     </Styledp02Campfire>

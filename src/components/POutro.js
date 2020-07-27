@@ -14,7 +14,7 @@ const POutro = props => {
   return (
     <StyledPOutro>
       <h1>{line1}</h1>
-      <h2>{line2}</h2>
+      {line2}
       <p>Copyright ⓒ 2020 By seungmee lee. All right reserved.</p>
     </StyledPOutro>
   )
@@ -45,8 +45,12 @@ const StyledPOutro = styled.div`
     font-size: 0.8em;
     font-weight: 300;
     line-height: 1.5;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
     @media (max-width: 1024px) {
-      width: 80vw;
+      width: 80%;
       display: inline-block;
     }
   }

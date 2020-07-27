@@ -54,20 +54,21 @@ const StyledPPrototype = styled.div`
   margin-top: 10vh;
   grid-template-columns: 62.66vw 31.33vw;
   @media (max-width: 1024px) {
-    grid-template-rows: 50vh 50vh;
+    grid-template-rows: 30vh 50vh;
     grid-template-columns: none;
+    padding: 0 5vw;
+    margin-top: 0;
+
+    height: max-content;
   }
   .videoWrapper {
     width: 60vw;
     height: max-content;
     position: relative;
     margin: 0;
-    background-color: red;
     display: flex;
     align-content: start;
     @media (max-width: 1024px) {
-      width: 94vw;
-      height: 50vh;
     }
 
     .react-player {
@@ -78,10 +79,19 @@ const StyledPPrototype = styled.div`
       width: 100%;
       height: 60vw;
       padding: 0;
+      @media (max-width: 1024px) {
+        width: 100vw !important;
+        margin-left: -5vw;
+        height: 30vh !important;
+        padding: 0;
+      }
     }
   }
   .textWrapper {
     color: white;
+    @media (max-width: 1024px) {
+      height: max-content;
+    }
 
     h1 {
       font-size: 2.5em;
@@ -89,6 +99,10 @@ const StyledPPrototype = styled.div`
       margin-bottom: 8vh;
       margin-top: 8vh;
       line-height: 1.3;
+      @media (max-width: 1024px) {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+      }
     }
     h1 span {
       font-size: 0.5em;
@@ -98,6 +112,9 @@ const StyledPPrototype = styled.div`
       font-size: 0.8em;
       font-weight: 300;
       margin-bottom: 15vh;
+      @media (max-width: 1024px) {
+        margin-bottom: 3vh;
+      }
     }
     a {
       color: white;

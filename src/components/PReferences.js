@@ -37,13 +37,24 @@ const StyledPReferences = styled.div`
   line-height: 1.8;
   display: grid;
   grid-template-columns: 62.66vw 31.33vw;
+  @media (max-width: 1024px) {
+    width: 90vw;
+    margin-left: 5vw;
+    display: block;
+  }
   .urlList {
     width: 31.33vw;
+    @media (max-width: 1024px) {
+      width: 90vw;
+    }
   }
   h1 {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 2vh;
+    @media (max-width: 1024px) {
+      margin-bottom: 5vh;
+    }
   }
   p {
     margin: 0;
