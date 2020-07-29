@@ -69,6 +69,11 @@ const Main = () => {
   return (
     <div>
       <StyledMain>
+        <img
+          src={require('https://smlweb-src.s3.ap-northeast-2.amazonaws.com/webthumb_small.png')}
+          alt=""
+          className="webthumb"
+        />
         <div className="third" />
         <div className="circle">
           <div className="slide-container2">
@@ -153,6 +158,14 @@ const StyledMain = styled.div`
   align-items: center;
   perspective: 120vw;
   position: relative;
+  .webthumb {
+    position: absolute;
+    top: 0;
+    z-index: -5000;
+    object-fit: cover;
+    width: 0px;
+    height: 0px;
+  }
   .wip {
     color: white;
     margin: 0 auto;
