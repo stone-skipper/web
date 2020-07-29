@@ -70,7 +70,7 @@ const Main = () => {
     <div>
       <StyledMain>
         <img
-          src="https://smlweb-src.s3.ap-northeast-2.amazonaws.com/webthumb_small.png"
+          src="https://smlweb-src.s3.ap-northeast-2.amazonaws.com/webthumb_small.jpg"
           alt="webthumb"
           className="webthumb"
         />
