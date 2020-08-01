@@ -27,7 +27,8 @@ const Contact = () => {
           </span>
           <br />
           <br />
-          currently in <span>Seoul, Korea,</span> participating in
+          currently in <span>Seoul, Korea,</span>
+          <br /> participating in
           <span> a project about the Mixed Reality & Entertainment.</span>
           <br />
         </Intro>

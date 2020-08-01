@@ -92,7 +92,7 @@ const StyledPDrawing = styled.div`
       font-size: 0.8em;
       font-weight: 300;
       margin-top: 0.5em;
-      width: 70%;
+      width: 100%;
     }
   }
 `

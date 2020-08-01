@@ -26,8 +26,7 @@ const PDetail = props => {
               <img
                 src={
                   'https://smlweb-src.s3.ap-northeast-2.amazonaws.com/' +
-                  item.imgSrc +
-                  '.jpg'
+                  item.imgSrc
                 }
                 alt={item.imgSrc}
               />

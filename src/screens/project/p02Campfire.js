@@ -95,19 +95,19 @@ const p02Campfire = () => {
   ]
   var sect1 = [
     {
-      imgSrc: 'p02_img11',
+      imgSrc: 'p02_gif00.gif',
       detailTitle: 'Individuals, carrying their environment',
       detailDesc:
         'People work all individually anywhere, using a device that can pull up an environment they want on the physical surroundings.'
     },
     {
-      imgSrc: 'p02_img10',
+      imgSrc: 'p02_gif01.gif',
       detailTitle: 'Find people for instant collaboration',
       detailDesc:
         'Connect you to people who can develop your work, based on the status of your work'
     },
     {
-      imgSrc: 'p02_img12',
+      imgSrc: 'p02_gif02.gif',
       detailTitle: 'Set the environment for collaboration',
       detailDesc:
         'Control the range of environment and utilize accordingly for collaboration'
@@ -115,19 +115,19 @@ const p02Campfire = () => {
   ]
   var sect2 = [
     {
-      imgSrc: 'p02_img13',
+      imgSrc: 'p02_gif03.gif',
       detailTitle: 'Conversations to actions',
       detailDesc:
         'Conversations are identified and pulled as an interactive touchpoints of information and tools'
     },
     {
-      imgSrc: 'p02_img14',
+      imgSrc: 'p02_gif06.gif',
       detailTitle: 'Bring personal work style',
       detailDesc:
         'Work with personal tools and interfaces when working in a shared Campfire environment'
     },
     {
-      imgSrc: 'p02_img17',
+      imgSrc: 'p02_gif05.gif',
       detailTitle: 'Fluent flow of remote collaboration',
       detailDesc:
         'Make realtime connections between you and a remote teammate to share information and the status'
@@ -135,14 +135,14 @@ const p02Campfire = () => {
   ]
   var sect3 = [
     {
-      imgSrc: 'p02_img15',
+      imgSrc: 'p02_gif04.gif',
       detailTitle: 'Spread embers to expand insight',
       detailDesc:
         'Reach out to people who can provide meaningful perspectives. Contributors can easily participate by experiencing the content and discussing with people around them.'
     },
     {
-      imgSrc: 'p02_img16',
-      detailTitle: 'Open collaboration anywhere',
+      imgSrc: 'p02_gif07.gif',
+      detailTitle: 'Easy contributions by a conversation',
       detailDesc:
         'The boundary of collaboration will be expanded from team to everyone with more appropriate expertise and chances of instant meet-up.'
     }
@@ -217,7 +217,7 @@ const p02Campfire = () => {
         question={
           <p>
             “Works are getting flexible, but what about
-            <span>collaboration?”</span>
+            <span> collaboration?”</span>
           </p>
         }
       />
