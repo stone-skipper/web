@@ -206,10 +206,32 @@ const e01Odd = () => {
       <PDivider />
       <LazyLoad height="70vh" offset={1000} once>
         <PPrototype
-          videoSrc="https://vimeo.com/415208441"
+          videoSrc="https://vimeo.com/463895729"
           title={
             <h1>
               <span>01/ </span>
+              <br />
+              Voice-controlled workout timer
+            </h1>
+          }
+          desc="During the pandemic, I've been doing home workout. I found it annoying  to control my smartphone for setting a timer, so I made a voice-controlled timer interaction. Of course, Siri and Bixby can do the same thing, but in this web-app you don't need to call those AI assistant with full sentences. "
+          links={[
+            {
+              linkSrc: 'https://workoutvoice.netlify.com/',
+              linkTitle:
+                'Try by yourself - only available on Android Google browser'
+            }
+          ]}
+        />
+      </LazyLoad>
+      <PDivider />
+
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
+          videoSrc="https://vimeo.com/415208441"
+          title={
+            <h1>
+              <span>02/ </span>
               <br />
               Morse code
             </h1>
@@ -235,7 +257,7 @@ const e01Odd = () => {
           videoSrc="https://vimeo.com/417905262"
           title={
             <h1>
-              <span>02/</span> <br />
+              <span>03/</span> <br />
               Cylinder scroll
             </h1>
           }
@@ -260,7 +282,7 @@ const e01Odd = () => {
           videoSrc="https://vimeo.com/415208599"
           title={
             <h1>
-              <span>03/</span> <br />
+              <span>04/</span> <br />
               Annoying Player
             </h1>
           }
@@ -284,7 +306,7 @@ const e01Odd = () => {
           videoSrc="https://vimeo.com/417949198"
           title={
             <h1>
-              <span>04/</span> <br />
+              <span>05/</span> <br />
               Color Timer
             </h1>
           }
