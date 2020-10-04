@@ -9,7 +9,7 @@ import './App.css'
 import Layout from './components/Layout'
 import { HashRouter } from 'react-router-dom'
 import { hotjar } from 'react-hotjar'
-import { ReactGA } from 'react-ga'
+import ReactGA from 'react-ga'
 
 function App() {
   hotjar.initialize(460400, 6)
