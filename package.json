@@ -53,6 +53,7 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-feather": "^1.1.6",
+    "react-ga": "^3.1.2",
     "react-hotjar": "^2.2.0",
     "react-lazy-load": "^3.0.13",
     "react-lazyload": "^2.6.8",
