@@ -12,9 +12,9 @@ import { hotjar } from 'react-hotjar'
 import ReactGA from 'react-ga'
 
 function App() {
-  hotjar.initialize(460400, 6)
   ReactGA.initialize('UA-76885727-1')
   ReactGA.pageview(window.location.pathname + window.location.search)
+  hotjar.initialize(460400, 6)
 
   // const imagemin = require('imagemin')
   // const imageminWebp = require('imagemin-webp')
