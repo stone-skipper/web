@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './logo.svg'
 import { Main, Works, Profile, Photolog, Contact } from './screens'
 import { p01, p02, p03, p04, p05, p06 } from './screens/project'
-import { e01, e02, e03, e04, e05 } from './screens/expmnt'
+import { e01, e02, e03, e04, e05, e06 } from './screens/expmnt'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
@@ -50,6 +50,8 @@ function App() {
         <Route path="/expmnt/ptor" component={e03} />
         <Route path="/expmnt/website" component={e04} />
         <Route path="/expmnt/unified" component={e05} />
+        <Route path="/expmnt/hand" component={e06} />
+
       </Layout>
     </HashRouter>
   )

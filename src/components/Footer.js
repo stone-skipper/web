@@ -12,7 +12,7 @@ import styled from 'styled-components'
 const Footer = () => {
   return (
     <StyledFooter>
-      Copyright ⓒ 2020 By Seungmee Lee.
+      Copyright ⓒ 2020 By seungmee lee
       <br />
       All right reserved.
     </StyledFooter>

@@ -16,7 +16,7 @@ const Contact = () => {
       <Logo hide={0} />
       <StyledContact>
         <Intro>
-          <span>🙋 Hi there! 🙋</span>
+          {/* <span>🙋 Hi there! 🙋</span> */}
           <br />
           Looking for new job opportunities in
           <span>
@@ -44,11 +44,17 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            @_ss_mm_ll
+            personal
+          </a>
+          <a
+            href="https://www.instagram.com/stone.skipper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            work
           </a>
           <br />
           <img src={require(`../img/linkedin.svg`)} alt="linkedin" />
-
           <a
             href="https://www.linkedin.com/in/seungmeelee/"
             target="_blank"
@@ -96,6 +102,9 @@ const ContactHere = styled.div`
   @media (max-width: 1024px) {
     margin-left: 5vw;
     margin-top: 8vh;
+  }
+  & a{
+    margin-right: 1vw;
   }
   & img {
     width: 1.3em;

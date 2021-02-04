@@ -1,5 +1,13 @@
 [
   {
+    "type": "Gestural Interaction Prototype",
+    "title": "hand cursor",
+    "imgSrc": "e06_thumb",
+    "link": "/expmnt/hand",
+    "year": 2020,
+    "category": "featured interactives"
+  },
+  {
     "type": "Framer X study",
     "title": "odd interactions",
     "imgSrc": "e01_thumb",
