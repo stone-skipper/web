@@ -16,21 +16,20 @@ const Contact = () => {
       <Logo hide={0} />
       <StyledContact>
         <Intro>
-          {/* <span>🙋 Hi there! 🙋</span> */}
+          <span>🙋 Hi there! </span>
           <br />
           Looking for new job opportunities in
           <span>
-            {' '}
             designing advanced ux / creative experience
             <br />
             for emerging technology, physical products and spaces.
           </span>
-          <br />
-          <br />
-          currently in <span>Seoul, Korea,</span>
-          <br /> participating in
+          <br /><br />
+          I'm currently in <span>Seoul, Korea.</span> Hit me up for a cup of coffee via links below, if you're around.
+
+          {/* <br /> participating in
           <span> a project about the Mixed Reality & Entertainment.</span>
-          <br />
+          <br /> */}
         </Intro>
         <ContactHere>
           <img src={require(`../img/email.svg`)} alt="email" />
@@ -39,19 +38,19 @@ const Contact = () => {
           <br />
           <img src={require(`../img/insta.svg`)} alt="insta" />
 
-          <a
+          {/* <a
             href="https://www.instagram.com/_ss_mm_ll"
             target="_blank"
             rel="noopener noreferrer"
           >
             personal
-          </a>
+          </a> */}
           <a
             href="https://www.instagram.com/stone.skipper"
             target="_blank"
             rel="noopener noreferrer"
           >
-            work
+            stone.skipper
           </a>
           <br />
           <img src={require(`../img/linkedin.svg`)} alt="linkedin" />

@@ -330,7 +330,7 @@ const p03Wonderland = () => {
         <PProcess imgs={processImg} />
       </LazyLoad>
       <POutro
-        line1="Props designer"
+        line1="Props designer (2019.09 - 2020.05 / 9 months)"
         line2={
           <h2>
             The production team focused on creating a visual that looks familiar

@@ -46,22 +46,7 @@ const Profile = () => {
       <DivInterSkill>
         <h2>Interest & skills</h2>
         <SecInterest>
-          <div className="imgGroup">
-            <img src={require('../img/profile-01-b.jpg')} alt="" />
 
-            <img src={require('../img/profile-01.jpg')} alt="" />
-            <h2>
-              Bridge digital experiences <br />
-              with <span>tangible</span> mediums{' '}
-            </h2>
-            <p>
-              Adapt industrial design tools <br />
-              and processes
-              <br />
-              <br />
-              Rhinoceros / Keyshot / 3d printing
-            </p>
-          </div>
           <div className="imgGroup">
             <img src={require('../img/profile-02-b.jpg')} alt="" />
 
@@ -95,6 +80,22 @@ const Profile = () => {
               <br />
               <br />
               Cinema4D / Framer X / HTML / CSS
+            </p>
+          </div>
+          <div className="imgGroup">
+            <img src={require('../img/profile-01-b.jpg')} alt="" />
+
+            <img src={require('../img/profile-01.jpg')} alt="" />
+            <h2>
+              Bridge digital experiences <br />
+              with <span>tangible</span> mediums{' '}
+            </h2>
+            <p>
+              Adapt industrial design tools <br />
+              and processes
+              <br />
+              <br />
+              Rhinoceros / Keyshot / 3d printing
             </p>
           </div>
         </SecInterest>
@@ -174,7 +175,6 @@ const StyledProfile = styled.div`
 const DivIntro = styled.div`
   width: 97vw;
   height: max-content;
-  /* background-color: red; */
   margin-left: 3vw;
   color: white;
   margin-bottom: 15vh;
@@ -184,7 +184,7 @@ const DivIntro = styled.div`
 
   & p {
     width: 35vw;
-    font-size: 1em;
+    font-size: 0.9em;
     float: left;
     margin-right: 10vw;
     @media (max-width: 1024px) {
@@ -208,6 +208,8 @@ const DivExp = styled.div`
   overflow-y: hidden;
   color: white;
   border-top: 1px solid rgba(256, 256, 256, 0.2);
+  border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+
   & > h2 {
     font-size: 0.8em;
     padding-top: 0.8em;

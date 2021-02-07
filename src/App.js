@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import { Main, Works, Profile, Photolog, Contact } from './screens'
-import { p01, p02, p03, p04, p05, p06 } from './screens/project'
+import { p01, p02, p03, p04, p05, p06, p07 } from './screens/project'
 import { e01, e02, e03, e04, e05, e06 } from './screens/expmnt'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -44,6 +44,8 @@ function App() {
         <Route path="/project/superhappy" component={p05} />
         <Route path="/project/paragraph" component={p04} />
         <Route path="/project/nofie" component={p06} />
+        <Route path="/project/twinworld" component={p07} />
+
 
         <Route path="/expmnt/odd" component={e01} />
         <Route path="/expmnt/faceband" component={e02} />

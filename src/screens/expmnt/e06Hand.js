@@ -14,6 +14,9 @@ import POverview from '../../components/POverview'
 import PReferences from '../../components/PReferences'
 import PSlideshow from '../../components/PSlideshow'
 import PImgLayout01 from '../../components/PImgLayout01'
+import PInsightLR from '../../components/PInsightLR'
+import PVideo from '../../components/PVideo'
+
 
 
 
@@ -21,6 +24,9 @@ import PImgLayout01 from '../../components/PImgLayout01'
 import styled from 'styled-components'
 import Close from '@material-ui/icons/Close'
 import LazyLoad from 'react-lazy-load'
+
+
+import teaser from '../../img/p03_v01.mp4'
 
 // 4. Static Resources
 
@@ -35,20 +41,16 @@ const e06Hand = () => {
             desc: 'Tensorflow'
         },
         {
-            url: 'https://www.framer.com/learn/guide/designing-with-apis/',
-            urltitle: 'Designing with APIs',
-            desc: 'from Framer Learn'
+            url: 'https://dev.to/devdevcharlie/playing-beat-saber-in-the-browser-with-body-movements-using-posenet-tensorflow-js-36km',
+            urltitle: 'Beat Saber with body movements',
+            desc: 'by Charlie Gerard'
         },
         {
-            url: 'https://www.framer.com/support/using-framer-x/live-data/',
-            urltitle: 'Working with Live Data',
-            desc: 'from Framer Support'
+            url: 'https://medium.com/@kirstenlindsmith/translating-posenet-into-react-js-58f438c8605d',
+            urltitle: 'Translating PoseNet into React.js',
+            desc: 'by Kirsten Lindsmith'
         },
-        {
-            url: 'https://www.facebook.com/groups/framerkorea/',
-            urltitle: 'Framer X Weekly challenge',
-            desc: 'from Framer Korea'
-        }
+
     ]
 
 
@@ -73,6 +75,30 @@ const e06Hand = () => {
         },
     ]
 
+    var insightImgs = [
+        {
+            imgSrc: 'e06_img01',
+            number: '01',
+            title: 'Hands-free communication',
+            desc:
+                "When we do zoom calls, hands will stay free from keyboards or mouse, allowing more natural gestures during the communication."
+        },
+        {
+            imgSrc: 'e06_img03',
+            number: '02',
+            title: 'No remote-holder dominance',
+            desc:
+                "The person with a remote controller, or a console controller dominate the whole experience. Everyone will be able to raise hands and interact, rather than struggling with remote controller keys."
+        },
+        {
+            imgSrc: 'e06_img04',
+            number: '03',
+            title: 'Break the boundary of the screens',
+            desc:
+                'We interact with a large meeting screen via personal laptops or with the touchscreen, limiting the interaction - or even the control of the communication to a few people. Anyone, even from the far back within the view of camera will draw on the board, interact with materials.'
+        }
+    ]
+
     return (
         <Stylede01Odd>
             <Link to="/works">
@@ -84,22 +110,39 @@ const e06Hand = () => {
                 type="code + prototyping"
                 year="2020"
                 detail="Gestural interaction prototype"
-                imgSrc="e06_img01"
+                imgSrc="e06_img27"
                 icons={[]}
                 bkwrapper={true}
             />
             <POverview
                 question={
                     <p>
-                        When the camera starts to understand its view,
-<br /><span>especially when we face each other</span></p>
+                        combine machine learning to enable
+                        <br /><span>another way of interacting with a device</span><br />
+                    - without no additional accessories</p>
                 }
             />
-            <PParagraph desc="Framer X is a prototyping tool, based on ReactJS. It requires a basic knowledge of coding, but it's a great tool to create working functions and interactions. Those are some of prototypes made with Framer X. I was more interested in physical interactions or multi-device interactions rather than microinteractions of UI. " />
-            <PDivider />
+            <PParagraph desc="Hand gesture interaction is not something new. There have been several peripherals for the hand recognition like leap motion, and some wearables. But something already existing with our devices can do the similar things, when it's supported with machine learning. This web experiment is made with ReactJS and Tensorflow Handpose model, using your webcam on laptop to read your hands and motions." />
             {/* <LazyLoad height="135vh" offset={100} once>
-                <PImgLayout01 imgSrc="p03_img11" />
+                <PImgLayout01 imgSrc="e06_img03" />
             </LazyLoad> */}
+            <LazyLoad height="120vh" offset={100} once>
+                <PVideo
+                    videoSrc="https://vimeo.com/509466063"
+                    wide={true}
+                    playing={true}
+                    loop={true}
+                    muted={true}
+                    controls={false}
+                />
+            </LazyLoad>
+
+            <PInsightLR
+                imgs={insightImgs}
+                title="natural interaction with devices and people"
+                desc="No additional accessory is required to add one more way to interact with your screen. This can allow more intuitive interaction, especially for communication between people and the usage of devices in groups."
+            />
+
             <PLink
                 desc="the work is still in progress, but"
                 linkTitle="here's the link"
@@ -112,7 +155,7 @@ const e06Hand = () => {
                 <PSlideshow
                     imgs={processImg2}
                     title="interaction components"
-                    desc="Started with building simple components like status modal, basic tap function, buttons, and expanding to actual application to several interactions"
+                    desc="Started with building simple components like status modal, basic tap function, buttons, and expanding to actual application to several interactions."
                     dur={3000}
                     trdr={300}
                 />
@@ -127,8 +170,13 @@ const e06Hand = () => {
                             <span>01/ </span> <br />
 hand cursor heatmap            </h1>
                     }
-                    desc="Find two smartphone to build cutting-edge foldable phone. The cheapest foldable display in the market :)"
-                    links={[]}
+                    desc="Get the cursor position data continously and turn it into visual. The cursur is where the plus sign is, which is the middle point of the thumb and the index finger."
+                    links={[
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app',
+                            linkTitle: 'Try by yourself'
+                        }
+                    ]}
                 />
             </LazyLoad>
             {/* <PDivider /> */}
@@ -144,8 +192,13 @@ hand cursor heatmap            </h1>
               index finger tap &<br /> middle finger tap
             </h1>
                     }
-                    desc="As a study for the foldable phone ux with the fake-fold, I tweaked the fake-fold into an e-book interaction. "
-                    links={[]}
+                    desc="I created a function that recognizes when the thumb and the index finger(or the middle finger) points are close enough. This triggers the main clicking function, and the middle finger tap serves as an additional clicking function."
+                    links={[
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/interactions',
+                            linkTitle: 'Try by yourself'
+                        }
+                    ]}
                 />
             </LazyLoad>
 
@@ -159,31 +212,88 @@ hand cursor heatmap            </h1>
               status / control
             </h1>
                     }
-                    desc="The problem with the some prototypes above is that they cannot be shared. They're connected to same socket so when someone access to one side of the prototypes, they cannot work as they should do. So this component is to pair two mobiles with the random code as their rooms. "
+                    desc="It's like a console window related to this hand cursor. You can also check which element is being hovered, or toggle some visibilities and functions."
                     links={[
-
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/interactions',
+                            linkTitle: 'Try by yourself'
+                        }
                     ]}
                 />
             </LazyLoad>
 
             <PDivider />
+
+            <LazyLoad height="70vh" offset={1000} once>
+                <PPrototype
+                    videoSrc="https://vimeo.com/507996238"
+                    title={
+                        <h1>
+                            <span>04/</span> <br />
+hover
+            </h1>
+                    }
+                    desc="It was the simplest function I can build. I made a component that recognizes when the cursor within it, and reacts in a certain way."
+                    links={[
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/01',
+                            linkTitle: 'Try by yourself'
+                        }
+                    ]}
+                />
+            </LazyLoad>
+            <LazyLoad height="70vh" offset={1000} once>
+                <PPrototype
+                    videoSrc="https://vimeo.com/507996413"
+                    title={
+                        <h1>
+                            <span>05/</span> <br />
+Hover and click
+            </h1>
+                    }
+                    desc="By developing the hover function, the same component also recognizes if the cursor is within the element and whether the tap was triggered at the same time."
+                    links={[
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/02',
+                            linkTitle: 'Try by yourself'
+                        }
+                    ]}
+                />
+            </LazyLoad>
+
+            <LazyLoad height="70vh" offset={1000} once>
+                <PPrototype
+                    videoSrc="https://vimeo.com/509466030"
+                    title={
+                        <h1>
+                            <span>06/ </span>
+                            <br />
+next slide please           </h1>
+                    }
+                    desc="As this experiment initially started as an application for Zoom, I developed this function to apply on skipping through slides while talking. Same thing can be done with mouse and keyboard, but this allows more natural gesture for communication to happen, which I believe helpful in speaking more naturally."
+                    links={[
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/03',
+                            linkTitle: 'Try by yourself'
+                        }
+                    ]}
+                />
+            </LazyLoad>
             <LazyLoad height="70vh" offset={1000} once>
                 <PPrototype
                     videoSrc="https://vimeo.com/507996505"
                     title={
                         <h1>
-                            <span>04/ </span>
+                            <span>07/ </span>
                             <br />
-              tap and draw
-            </h1>
+draw            </h1>
                     }
-                    desc="During the pandemic, I've been doing home workout. I found it annoying  to control my smartphone for setting a timer, so I made a voice-controlled timer interaction. Of course, Siri and Bixby can do the same thing, but in this web-app you don't need to call those AI assistant with full sentences. "
+                    desc="Though I didn't fully develop this function to have smooth lines, this function draws lines during a tap."
                     links={[
-                        // {
-                        //     linkSrc: 'https://workoutvoice.netlify.com/',
-                        //     linkTitle:
-                        //         'Try by yourself - only available on Android Google browser'
-                        // }
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/04',
+                            linkTitle: 'Try by yourself'
+                        }
                     ]}
                 />
             </LazyLoad>
@@ -194,46 +304,36 @@ hand cursor heatmap            </h1>
                     videoSrc="https://vimeo.com/507996454"
                     title={
                         <h1>
-                            <span>05/ </span>
+                            <span>08/ </span>
                             <br />
-              Weave with your hand
-            </h1>
+weave            </h1>
                     }
-                    desc="Inspired by the film 'Parasite' and the 'Stranger Things'. Longpress and shortpress for trying your own morse code. "
+                    desc="As I develop several interactions, what I really enjoyed most was its different tactility I feel by tapping, which is way different from clicking on a mouse. Index finger tap is for vertical lines, and the middle finger tap is for horizontal lines."
                     links={[
-
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/06',
+                            linkTitle: 'Try by yourself'
+                        }
                     ]}
                 />
             </LazyLoad>
 
-            <LazyLoad height="70vh" offset={1000} once>
-                <PPrototype
-                    videoSrc="https://vimeo.com/507996413"
-                    title={
-                        <h1>
-                            <span>06/</span> <br />
-Hover and click
-            </h1>
-                    }
-                    desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
-                    links={[
-
-                    ]}
-                />
-            </LazyLoad>
 
             <LazyLoad height="70vh" offset={1000} once>
                 <PPrototype
                     videoSrc="https://vimeo.com/507996369"
                     title={
                         <h1>
-                            <span>07/</span> <br />
+                            <span>09/</span> <br />
 stamp
             </h1>
                     }
-                    desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
+                    desc="Feels pretty good when you tap in the air and something happens!"
                     links={[
-
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/05',
+                            linkTitle: 'Try by yourself'
+                        }
                     ]}
                 />
             </LazyLoad>
@@ -242,35 +342,33 @@ stamp
                     videoSrc="https://vimeo.com/507996268"
                     title={
                         <h1>
-                            <span>08/</span> <br />
+                            <span>10/</span> <br />
 walk, step by step
             </h1>
                     }
-                    desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
+                    desc="Inspired by a scene in the movie 'Her(2013)', gaming interaction of the avatar with hand. It's not exactly same, but I really liked its interaction, the way of the user controlling the avatar step by step."
                     links={[
-
+                        {
+                            linkSrc: 'https://handgesture-react.netlify.app/07',
+                            linkTitle: 'Try by yourself'
+                        }
                     ]}
                 />
             </LazyLoad>
-            <LazyLoad height="70vh" offset={1000} once>
-                <PPrototype
-                    videoSrc="https://vimeo.com/507996238"
-                    title={
-                        <h1>
-                            <span>09/</span> <br />
-hover
-            </h1>
-                    }
-                    desc="A scroll effect that scales contents like it's scrolling in 3d cylinder."
-                    links={[
 
-                    ]}
-                />
-            </LazyLoad>
 
 
             <PDivider />
-
+            <LazyLoad height="120vh" offset={100} once>
+                <PVideo
+                    videoSrc="https://vimeo.com/509465987"
+                    wide={true}
+                    playing={true}
+                    loop={true}
+                    muted={true}
+                    controls={false}
+                />
+            </LazyLoad>
 
             <PReferences title="References" references={references} />
             <PDivider />
@@ -282,11 +380,8 @@ hover
                 line1="Personal study project"
                 line2={
                     <h2>
-                        This is the archive of prototypes I made with Framer X, as a part of
-            learning a new tool. <br />
-            With this new tool, I focused more creating new interactions and
-            functions rather than user interface aspect.
-          </h2>
+                        I was interested in machine learning libraries, but most of them required python.<br /> I wanted to try something lightly and then I found out that tensorflow is providing some pre-trained model into javascript libraries I can even use with react.<br />This work is still in progress, to add more use cases and interactions.
+                    </h2>
                 }
             />
         </Stylede01Odd>

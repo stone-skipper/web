@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import PCover from '../../components/PCover'
 import POutro from '../../components/POutro'
 import PProcess from '../../components/PProcess'
+import Pwip from '../../components/Pwip'
 import PVideo from '../../components/PVideo'
 import POverview from '../../components/POverview'
 import PParagraph from '../../components/PParagraph'
@@ -45,6 +46,7 @@ const e04Web = () => {
       <Link to="/works">
         <Close className="closeButton" />
       </Link>
+      <Pwip />
       <PCover
         title="website v3"
         desc="the process of designing and building the portfolio website"
@@ -57,8 +59,8 @@ const e04Web = () => {
       <POverview
         question={
           <p>
-            "What's going to happen when the digital experiences in 2D screens
-            turns into physical space?"
+            the third version of my website - <br />
+            processes and some thoughts
           </p>
         }
       />
@@ -77,6 +79,11 @@ const e04Web = () => {
         muted="true"
       />
 
+      <PLink
+        desc="processes and thoughts (in Korean)"
+        linkTitle="here"
+        link="https://designpostscripts.tistory.com/2"
+      />
       <PIframe
         url="https://stone-skipper.github.io/svs/#/"
         title="exhibition website for more details"
@@ -92,14 +99,10 @@ const e04Web = () => {
 
       <PProcess imgs={processImg} />
       <POutro
-        line1="Exhibition project from SEVENSTARS"
+        line1="personal project"
         line2={
           <h2>
-            SEVENSTARS is a group of artists, developers, and designers who are
-            interested in bringing media and interactivity into a space.
-            <br />I participated in this exhibition as an artist and an art
-            director for the whole exhibition, designing the graphic assets for
-            the event. <br /> tools I used : cinema4D / Aframe.io
+            The whole process of building a website takes a long time, especially when I'm still learning.
           </h2>
         }
       />
