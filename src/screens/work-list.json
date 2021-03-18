@@ -8,6 +8,14 @@
     "category": "featured id visual"
   },
   {
+    "type": "AR service ux scenario",
+    "title": "twinworld",
+    "imgSrc": "p07_thumb",
+    "link": "/project/twinworld",
+    "year": 2020,
+    "category": "featured visual"
+  },
+  {
     "type": "future UX scenario",
     "title": "campfire",
     "imgSrc": "p02_thumb",
@@ -23,7 +31,6 @@
     "year": 2017,
     "category": "id"
   },
-
   {
     "type": "industrial design / experience design",
     "title": "paragraph",

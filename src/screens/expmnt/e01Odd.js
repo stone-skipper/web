@@ -206,6 +206,26 @@ const e01Odd = () => {
       <PDivider />
       <LazyLoad height="70vh" offset={1000} once>
         <PPrototype
+          videoSrc="https://vimeo.com/525645573"
+          title={
+            <h1>
+              <span>00/ </span>
+              <br />
+              Face Messenger with Tensorflow face-api
+            </h1>
+          }
+          desc="Emotions are not visible when you text. This prototype read your face while you text, and show it with the words."
+          links={[
+            {
+              linkSrc: 'https://face-messenger.netlify.app/',
+              linkTitle:
+                'Try by yourself on desktop mode'
+            }
+          ]}
+        />
+      </LazyLoad>
+      <LazyLoad height="70vh" offset={1000} once>
+        <PPrototype
           videoSrc="https://vimeo.com/463895729"
           title={
             <h1>
