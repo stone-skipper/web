@@ -243,7 +243,7 @@ const e01Odd = () => {
             {
               linkSrc:
                 'https://drive.google.com/file/d/1Y4q-O7F_aM77GhTqqbdImXH3fZZ0jS3i/view?usp=sharing',
-              linkTitle: 'Download the source file'
+              linkTitle: 'Project File'
             }
           ]}
         />
