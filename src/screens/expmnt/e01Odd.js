@@ -218,8 +218,7 @@ const e01Odd = () => {
           links={[
             {
               linkSrc: 'https://face-messenger.netlify.app/',
-              linkTitle:
-                'Try by yourself on desktop mode'
+              linkTitle: 'Try by yourself on desktop mode'
             }
           ]}
         />
@@ -240,6 +239,11 @@ const e01Odd = () => {
               linkSrc: 'https://workoutvoice.netlify.com/',
               linkTitle:
                 'Try by yourself - only available on Android Google browser'
+            },
+            {
+              linkSrc:
+                'https://drive.google.com/file/d/1Y4q-O7F_aM77GhTqqbdImXH3fZZ0jS3i/view?usp=sharing',
+              linkTitle: 'Download the source file'
             }
           ]}
         />

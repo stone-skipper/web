@@ -46,14 +46,12 @@ function App() {
         <Route path="/project/nofie" component={p06} />
         <Route path="/project/twinworld" component={p07} />
 
-
         <Route path="/expmnt/odd" component={e01} />
         <Route path="/expmnt/faceband" component={e02} />
         <Route path="/expmnt/ptor" component={e03} />
         <Route path="/expmnt/website" component={e04} />
         <Route path="/expmnt/unified" component={e05} />
         <Route path="/expmnt/hand" component={e06} />
-
       </Layout>
     </HashRouter>
   )
