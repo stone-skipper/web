@@ -117,7 +117,7 @@
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-webpack": "^5.1.1",
     "lqip-loader": "^2.2.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "1.16.4",
     "pretty-quick": "^1.10.0",
     "uglify-js-brunch": "^2.10.0",
