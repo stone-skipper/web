@@ -225,13 +225,13 @@ const TitleItem = styled.div`
     -webkit-text-decoration-skip: objects; */
   }
   link {
-    pointer-events: none;
+    // pointer-events: none;
   }
 
   a {
     width: 100%;
     height: 100%;
-    pointer-events: none;
+    // pointer-events: none;
   }
 
   h1 {
